@@ -2,11 +2,15 @@
  * @author yaron samuel
  */
 package ex0;
-
+/**
+ * 
+ * @author yaron samuel
+ *
+ */
 public class raw {
 	
 
-		String id = new String();
+		private String id = null;
 		String date;
 		String time;
 		double lat;
@@ -78,15 +82,26 @@ public class raw {
 			Channel = r.Channel;
 			GSM = r.GSM;
 		}*/
+	
 		//getter and setters
 		public String getId() {
 			return id;
 		}
 
-		public void setId(String id) {
-			this.id = id;
+		/**
+		 * 
+		 * @param id2
+		 */
+		public void setId(String id2) {
+			this.id = id2;
+			
 		}
 
+		/**
+		 * 
+		 * @return
+		 * 
+		 */
 		public String getDate() {
 			return date;
 		}

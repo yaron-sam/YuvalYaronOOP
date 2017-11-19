@@ -4,6 +4,8 @@
 
 package ex0;
 
+import java.awt.List;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class wifiList {
@@ -19,16 +21,18 @@ SSID2, MAC2, Frequncy2, Signal2, ...
 	double lat;
 	double lon;
 	double alt;
-	wifiPoint[] list;
+//	wifiPoint[] list; //мозееч тег оти
+	ArrayList<wifiPoint> points;
 
-	public wifiList(String id, String date, String time, double lat, double lon, double alt, wifiPoint[] list) {
+	public wifiList(String id, String date, String time, double lat, double lon, double alt, ArrayList<wifiPoint> points) {
 		this.id = id;
 		this.date = date;
 		this.time = time;
 		this.lat = lat;
 		this.lon = lon;
 		this.alt = alt;
-		this.list = list;
+//		this.list = list.clone();
+		this.points = new ArrayList<wifiPoint>();
 	}
 	public wifiList(String id, String date, String time, double lat, double lon, double alt) {
 		this.id =  new String(id);
@@ -37,13 +41,22 @@ SSID2, MAC2, Frequncy2, Signal2, ...
 		this.lat = lat;
 		this.lon = lon;
 		this.alt = alt;
-		this.list = new wifiPoint[10];
+//		this.list = new wifiPoint[10];
+		this.points = new ArrayList<wifiPoint>();
 	}
-
+	
+	public void wifiPointAdd(wifiPoint p) {
+		points.add(p);
+		points.sort( new sortSignal());
+		while (points.size() > 10) {
+			points.remove(10);
+		}
+	}
+	
 	@Override
 	public String toString() {
 		return "wifiList [id=" + id + ", date=" + date + ", time=" + time + ", lat=" + lat + ", lon=" + lon + ", alt="
-				+ alt + ", list=" + Arrays.toString(list) + "]";
+				+ alt + ", points=" + Arrays.deepToString(points.toArray()) + "]";
 	}
 
 

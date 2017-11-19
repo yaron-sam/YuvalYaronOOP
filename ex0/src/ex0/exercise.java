@@ -25,7 +25,7 @@ public class exercise {
 	public static void main(String[] args) {
 
 		
-		Path folder = Paths.get("C:\\Users\\yaron samuel\\eclipse-workspace\\ex0\\data\\testfile");
+		Path folder = Paths.get("C:\\Users\\yaron samuel\\Documents\\GIT\\YuvalYaronOOP\\ex0\\data\\testfile");
 		List<String> paths = readFolder(folder);
 
 		paths.removeIf(x -> !x.endsWith("csv"));
@@ -59,13 +59,14 @@ public class exercise {
 		List<wifiList> res2;
 		List<wifiList> res3;
 		res1 = filterByIdrgroup(wifilist, str);
-		System.out.println("\nfilter by id group\n"+ res1 + "\n");
+//		System.out.println("\nfilter by id group\n"+ res1 + "\n");
 		
 		res2 = filterByLoc(wifilist, 32.09048524, 34.87696121);
-		System.out.println("filter by loction\n" + res2 + '\n');
+		System.out.println("found " +res2.size() + " in  this loction");
+//		System.out.println("filter by loction\n" + res2 + '\n');
 		
 		res3 = filterByDate(wifilist, "28/10/2017");
-		System.out.println("filter by date\n" + res3 + '\n');
+//		System.out.println("filter by date\n" + res3 + '\n');
 		
 		/*
 		 * ****for now the part of take the filtered lists and convert them to kml file. 
@@ -87,10 +88,10 @@ public class exercise {
 		String temp = kmlstart;
 		for (wifiList r : list) {
 
-			String kmlelement = "\t<Placemark>\n" + "\t<name>" + r.list[0].SSID + "</name>\n" + "\t<description>"
+			String kmlelement = "\t<Placemark>\n" + "\t<name>" + r.points.get(0).SSID + "</name>\n" + "\t<description>"
 					+ "id: <b>" + r.id + "</b><br/>date: <b>" + r.date + " " + r.time + "</b>" + "<br/>MAC: " + "<b>"
-					+ r.list[0].MAC + "</b>" + "<br/>Channel: " + "<b>" + r.list[0].Channel + "</b>" + "<br/>signal: "
-					+ "<b>" + r.list[0].Signal + "</b>" + "</description>\n" + "\t<Point>\n" + "\t\t<coordinates>"
+					+ r.points.get(0).MAC + "</b>" + "<br/>Channel: " + "<b>" + r.points.get(0).Channel + "</b>" + "<br/>signal: "
+					+ "<b>" + r.points.get(0).Signal + "</b>" + "</description>\n" + "\t<Point>\n" + "\t\t<coordinates>"
 					+ r.lon + "," + r.lat + "</coordinates>\n" + "\t</Point>\n" + "\t</Placemark>\n";
 
 			temp = temp + kmlelement;
@@ -169,21 +170,22 @@ public class exercise {
 				 * SSID10 MAC10 Frequncy10 Signal10 public wifiList(String id, String date,
 				 * String time, double lat, double lon, double alt, wifiPoint[] list)
 				 */
-				wifiPoint[] points = new wifiPoint[10];
+//				ArrayList<wifiPoint> points = new ArrayList<wifiPoint>() ;
+
+
+
+				wifiList wifiline = new wifiList(table[2], table[0], table[1], Double.parseDouble(table[3]),
+						Double.parseDouble(table[4]), Double.parseDouble(table[5]));
 
 				for (int j = 6, k = 0; j < table.length || k < 10; j += 4, k++) {
 					if (j < table.length && table[j] != null) {
-						points[k] = new wifiPoint();
-						points[k].SSID = table[j];
-						points[k].MAC = table[j + 1];
-						points[k].Channel = Integer.parseInt(table[j + 2]);
-						points[k].Signal = Integer.parseInt(table[j + 3]);
+						wifiline.wifiPointAdd(new wifiPoint(table[j],
+													table[j + 1],
+													Integer.parseInt(table[j + 2]) ,
+													Integer.parseInt(table[j + 3])));
+
 					}
 				}
-
-				wifiList wifiline = new wifiList(table[2], table[0], table[1], Double.parseDouble(table[3]),
-						Double.parseDouble(table[4]), Double.parseDouble(table[5]), points);
-
 				list.add(wifiline);
 
 			}
@@ -222,9 +224,10 @@ public class exercise {
 			for (int i = 0; i < wifilist.size(); i++) {
 				writer.print(wifilist.get(i).date + ',' + wifilist.get(i).time + ',' + wifilist.get(i).id + ','
 						+ wifilist.get(i).lat + ',' + wifilist.get(i).lon + ',' + wifilist.get(i).alt);
-				for (int j = 0; j < 10 && wifilist.get(i).list[j] != null; j++) {
-					writer.print(',' + wifilist.get(i).list[j].SSID + ',' + wifilist.get(i).list[j].MAC + ','
-							+ wifilist.get(i).list[j].Channel + ',' + wifilist.get(i).list[j].Signal);
+				
+				for (int j = 0; j < wifilist.get(i).points.size()  && j<10 ; j++) {
+					writer.print(',' + wifilist.get(i).points.get(j).SSID + ',' + wifilist.get(i).points.get(j).MAC + ','
+							+ wifilist.get(i).points.get(j).Channel + ',' + wifilist.get(i).points.get(j).Signal);
 				}
 				writer.println();
 			}
@@ -243,50 +246,23 @@ public class exercise {
 			 * double lat, double lon, double alt, wifiPoint[] list) {
 			 * 
 			 */
-			wifiPoint[] list = new wifiPoint[10];
 
 			wifiList r = new wifiList(rawlist.get(i).getId(), rawlist.get(i).getDate(), rawlist.get(i).getTime(),
 					rawlist.get(i).getLat(), rawlist.get(i).getLon(), rawlist.get(i).getAlt());
 
-			int k = 0;
 
 			while (rawlist.size() > i && r.id.equals(rawlist.get(i).getId()) && r.date.equals(rawlist.get(i).getDate())
 					&& r.time.equals(rawlist.get(i).getTime()) && r.lat == rawlist.get(i).getLat()
 					&& r.lon == rawlist.get(i).getLon() && r.alt == rawlist.get(i).getAlt()) {
 
-				if (k == 0) {
-					list[k] = new wifiPoint(rawlist.get(i).getSSID(), rawlist.get(i).getMAC(),
-							rawlist.get(i).getSignal(), rawlist.get(i).getChannel());
-					k++;
-				} else {
-					if (k < 10) {
-
-						list[k] = new wifiPoint(rawlist.get(i).getSSID(), rawlist.get(i).getMAC(),
-								rawlist.get(i).getSignal(), rawlist.get(i).getChannel());
-						Arrays.sort(list, new sortSignal());
-						k++;
-					} else { // k=10 this mean we need to replace
-						int index = -1;
-						for (int j = list.length - 1; j > 0; j--) {
-							if (rawlist.get(i).getSignal() < list[j].Signal) {
-								index = j;
-								break;
-							}
-						}
-						if (index != -1 || index == 0)
-							list[index] = new wifiPoint(rawlist.get(i).getSSID(), rawlist.get(i).getMAC(),
-									rawlist.get(i).getSignal(), rawlist.get(i).getChannel());
-						if (index == 0)
-							list[9] = new wifiPoint(rawlist.get(i).getSSID(), rawlist.get(i).getMAC(),
-									rawlist.get(i).getSignal(), rawlist.get(i).getChannel());
-						Arrays.sort(list, new sortSignal());
-						k++;
-					}
-				}
+				r.wifiPointAdd(new wifiPoint(rawlist.get(i).getSSID(), rawlist.get(i).getMAC(),
+						rawlist.get(i).getSignal(), rawlist.get(i).getChannel()));
 				i++;
+
+				
 			}
-			i = i + k - 2;
-			r.list = list;
+			i --;
+			
 			/*
 			 * for debuging
 			System.out.println("i: " + i + ",k: " + k + "\n" + r);*/
