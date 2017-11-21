@@ -7,6 +7,7 @@
  * this program create by yaron samuel and yuval gabso. 
  * the program create as exercise #0 to oop course, ariel university.
  * 
+ * i worte this from yuval
  */
 
 package ex0;
