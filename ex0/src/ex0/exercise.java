@@ -41,14 +41,20 @@ public class exercise {
 			rawlist = union(rawlist, temp);
 		}
 		
-		// convert raw list to wifi list with all the curract field.
+		/*
+		 *  convert raw list to wifi list with all the curract field.
+		 */
 		List<wifiList> wifilist = new ArrayList<wifiList>();
 		wifilist = createWifilist(rawlist);
 
-		// export the wifi list to csv file
+		/*
+		 *  export the wifi list to csv file
+		 */
 		createWifiListFile(wifilist);
 
-		// take csv file that we just creat and convert him to new wifi list.
+		/*
+		 *  take csv file that we just creat and convert him to new wifi list.
+		 */
 		wifilist = getWifilistFile("testwifilist.csv");
 
 		/*

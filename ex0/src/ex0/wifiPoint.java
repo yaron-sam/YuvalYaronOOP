@@ -30,25 +30,29 @@ public class wifiPoint {
 		return "wifiPoint [SSID=" + SSID + ", MAC=" + MAC + ", Signal=" + Signal + ", Channel=" + Channel + "]";
 	}
 	/**
-	 * @return the sSID
+	 * Getter wifiPoint.ssid
+	 * @return  ssid
 	 */
 	public String getSSID() {
 		return SSID;
 	}
 	/**
-	 * @return the mAC
+	 * Getter wifiPoint.mac
+	 * @return mac
 	 */
 	public String getMAC() {
 		return MAC;
 	}
 	/**
-	 * @return the signal
+	 * Getter wifiPoint.signal
+	 * @return signal
 	 */
 	public int getSignal() {
 		return Signal;
 	}
 	/**
-	 * @return the channel
+	 * Getter wifiPoint.channel
+	 * @return channel
 	 */
 	public int getChannel() {
 		return Channel;

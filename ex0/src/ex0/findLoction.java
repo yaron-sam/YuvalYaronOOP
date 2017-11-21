@@ -9,7 +9,11 @@ public class findLoction implements Condition<wifiList> {
 
 	double lat,lon;
 	
-	
+	/**
+	 * Constructor findLocation by getting
+	 * @param lat
+	 * @param lon
+	 */
 	public findLoction(double lat, double lon) {
 		super();
 		this.lat = lat;
@@ -19,6 +23,7 @@ public class findLoction implements Condition<wifiList> {
 
 	
 	/**
+	 *
 	 *Print lat and lon
 	 */
 	@Override

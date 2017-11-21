@@ -11,19 +11,33 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
+/**
+ * 
+ * @author Yuval_Gabso
+ * wifiListContainer class
+ *
+ */
 public class wifiListContainer {
 
 	private List<wifiList> container;
 
-	public wifiListContainer(List<wifiList> container) {
-		this.container = container;
-	}
-	
+	/**
+	 *  Constructor wifiListContainer
+	 */
 	public wifiListContainer() {
 		this.container = new ArrayList<wifiList>();
 	}
-	
+		/**
+	 * Copy constructor wifiListContainer
+	 * @param container
+	 */
+	public wifiListContainer(List<wifiList> container) {
+		this.container = container;
+	}
+	/**
+	 * Getting wifiListFile 
+	 * @param fileName
+	 */
 	public void getWifilistFile(String fileName) {
 //		List<wifiList> list = new ArrayList<wifiList>();
 
@@ -114,7 +128,9 @@ public class wifiListContainer {
 
 		}
 	}
-
+	/**
+	 * Creating a new wifiListFile
+	 */
 	public  void createWifiListFile() {
 		String[] title = { "Date", "Time", "ID", "Lat", "Lon", "Alt", "SSID1", "MAC1", "Frequncy1", "Signal1", "SSID2",
 				"MAC2", "Frequncy2", "Signal2", "SSID3", "MAC3", "Frequncy3", "Signal3", "SSID4", "MAC4", "Frequncy4",
@@ -152,24 +168,45 @@ public class wifiListContainer {
 			e.printStackTrace();
 		}
 	}
-
+	/**
+	 * Filter wifiList according to groupId 
+	 * @param list
+	 * @param users
+	 * @return filtered list
+	 */
 	public static List<wifiList> filterByIdrgroup(List<wifiList> list, List<String> users) {
 		Condition<wifiList> group = new findGroupId(users);
 		return (List<wifiList>) filter(list, group);
 	}
-
+	/**
+	 * Filter wifiList according to location
+	 * @param list
+	 * @param lat
+	 * @param lon
+	 * @return filtered list
+	 */
 	public static List<wifiList> filterByLoc(List<wifiList> list, double lat, double lon) {
 //		Condition<wifiList> condition = s -> s.lat == lat && s.lon == lon;
 		Condition<wifiList> condition = new findLoction(lat, lon);
 		System.out.println(condition);
 		return (List<wifiList>) filter(list, condition);
 	}
-
+	/**
+	 * Filter wifiList according to date
+	 * @param list
+	 * @param date
+	 * @return filtered list
+	 */
 	public static List<wifiList> filterByDate(List<wifiList> list, String date) {
 		Condition<wifiList> condition = s -> s.date.equals(date);
 		return (List<wifiList>) filter(list, condition);
 	}
-	
+	/**
+	 * General filter (abstract filter)
+	 * @param items
+	 * @param condition
+	 * @return new list after filtering
+	 */
 	static <T> Collection<T> filter(Collection<T> items, Condition<T> condition) {
 		Collection<T> output = new ArrayList<T>(); // initialize empty list
 		for (T item : items) {

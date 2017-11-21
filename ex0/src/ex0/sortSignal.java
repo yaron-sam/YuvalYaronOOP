@@ -6,7 +6,7 @@ import java.util.Comparator;
 public class sortSignal implements Comparator<wifiPoint>{
 
 
-		/* (non-Javadoc)
+		/** (non-Javadoc)
 		 * @see java.util.Comparator#compare(java.lang.Object, java.lang.Object)
 		 * compare wifiPoint by their signal.
 		 */

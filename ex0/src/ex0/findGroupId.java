@@ -2,7 +2,12 @@ package ex0;
 
 
 import java.util.Collection;
-
+/**
+ * 
+ * @author Yuval_Gabso
+ * findGroupId is implements Condition, creates new wifiList with the necessary data by filtering according to GroupId condition
+ *
+ */
 public class findGroupId implements Condition<wifiList> {
 
 	private Collection<String> list;
