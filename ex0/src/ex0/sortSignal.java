@@ -1,6 +1,4 @@
-/**
- * @author yaron samuel
- */
+
 package ex0;
 
 import java.util.Comparator;
@@ -8,6 +6,10 @@ import java.util.Comparator;
 public class sortSignal implements Comparator<wifiPoint>{
 
 
+		/* (non-Javadoc)
+		 * @see java.util.Comparator#compare(java.lang.Object, java.lang.Object)
+		 * compare wifiPoint by their signal.
+		 */
 		public int compare(wifiPoint o1, wifiPoint o2) {
 			//System.out.println("ID: " + o1 +"vs "+ o2); for debuging
  

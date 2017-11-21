@@ -1,16 +1,20 @@
-/**
- * @author yaron samuel
- */
-
 package ex0;
+
 
 public class wifiPoint {
 	String SSID;
 	String MAC;
 	int Signal;
 	int Channel;
-	public wifiPoint() {
-	}
+	
+
+	/**
+	 * Contractor of wifiPoint 
+	 * @param sSID
+	 * @param mAC
+	 * @param signal
+	 * @param channel
+	 */
 	public wifiPoint(String sSID, String mAC, int signal, int channel) {
 		super();
 		SSID = sSID;
@@ -18,6 +22,9 @@ public class wifiPoint {
 		Signal = signal;
 		Channel = channel;
 	}
+	/**
+	 * Print SSID, MAC, Signal and channel from wifiPoint
+	 */
 	@Override
 	public String toString() {
 		return "wifiPoint [SSID=" + SSID + ", MAC=" + MAC + ", Signal=" + Signal + ", Channel=" + Channel + "]";

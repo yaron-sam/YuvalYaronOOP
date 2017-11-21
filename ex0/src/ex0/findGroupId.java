@@ -1,12 +1,8 @@
-
 package ex0;
+
 
 import java.util.Collection;
 
-/**
- * @author yaron samuel
- *
- */
 public class findGroupId implements Condition<wifiList> {
 
 	private Collection<String> list;
@@ -17,14 +13,19 @@ public class findGroupId implements Condition<wifiList> {
 
 	
 	
-	
+	/**
+	 * Print User's list
+	 */
 	@Override
 	public String toString() {
 		return "find Group Users [list=" + list + "]";
 	}
 
 
-
+	/**
+	 *@param s
+	 *@return true if id equal to one of the id's in s.
+	 */
 	@Override
 	public boolean test(wifiList s) {
 		// TODO Auto-generated method stub

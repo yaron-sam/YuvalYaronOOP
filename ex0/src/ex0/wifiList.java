@@ -21,9 +21,17 @@ SSID2, MAC2, Frequncy2, Signal2, ...
 	double lat;
 	double lon;
 	double alt;
-//	wifiPoint[] list; //мозееч тег оти
 	ArrayList<wifiPoint> points;
-
+/**
+ * Contractor of wifiList
+ * @param id
+ * @param date
+ * @param time
+ * @param lat
+ * @param lon
+ * @param alt
+ * @param points
+ */
 	public wifiList(String id, String date, String time, double lat, double lon, double alt, ArrayList<wifiPoint> points) {
 		this.id = id;
 		this.date = date;
@@ -31,7 +39,6 @@ SSID2, MAC2, Frequncy2, Signal2, ...
 		this.lat = lat;
 		this.lon = lon;
 		this.alt = alt;
-//		this.list = list.clone();
 		this.points = new ArrayList<wifiPoint>();
 	}
 	public wifiList(String id, String date, String time, double lat, double lon, double alt) {

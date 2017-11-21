@@ -1,5 +1,6 @@
 /**
  * @author yaron samuel
+ * @author Yuval_Gabso
  */
 
 package ex0;
@@ -17,14 +18,19 @@ public class findLoction implements Condition<wifiList> {
 
 
 	
-	
+	/**
+	 *Print lat and lon
+	 */
 	@Override
 	public String toString() {
 		return "findLoction [lat=" + lat + ", lon=" + lon + "]";
 	}
 
 
-
+	/**
+	 * return true if the location is exists else return false
+	 * @param s
+	 */
 	@Override
 	public boolean test(wifiList s) {
 		// TODO Auto-generated method stub

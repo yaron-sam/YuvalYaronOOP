@@ -1,3 +1,9 @@
+/**
+ * Function that gets an abstract variable
+ * @param <T>
+ */
+
+
 package ex0;
  
 
