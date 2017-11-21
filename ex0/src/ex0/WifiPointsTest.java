@@ -1,14 +1,17 @@
-/**
- * 
- */
+
 package ex0;
+
+import static org.junit.Assert.*;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
+import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
 
 /**
  * @author Yuval_Gabso
@@ -16,9 +19,10 @@ import org.junit.jupiter.api.Test;
  */
 class WifiPointsTest {
 //????????????????????????????????this shit doesnt work, if you have any solution?
+	wifiPoint p;
 	@Before
-	public void init() {
-		wifiPoint p=new wifiPoint("ab","cd",1,2);
+	public void init()  throws Exception {
+		this.p=new wifiPoint("ab","cd",1,2);
 	}
 	/**
 	 * @throws java.lang.Exception

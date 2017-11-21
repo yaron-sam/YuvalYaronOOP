@@ -22,20 +22,22 @@ public class wifiListContainer {
 	private List<wifiList> container;
 
 	/**
-	 *  Constructor wifiListContainer
+	 *  Constructor empty wifiListContainer.
 	 */
 	public wifiListContainer() {
 		this.container = new ArrayList<wifiList>();
 	}
+	
 		/**
-	 * Copy constructor wifiListContainer
-	 * @param container
+	 * Copy constructor wifiListContainer.
+	 * @param container wifiListContainer we wand to copy
 	 */
 	public wifiListContainer(List<wifiList> container) {
 		this.container = container;
 	}
+	
 	/**
-	 * Getting wifiListFile 
+	 * Getting wifiListFile and enter him to wifilist container.
 	 * @param fileName
 	 */
 	public void getWifilistFile(String fileName) {

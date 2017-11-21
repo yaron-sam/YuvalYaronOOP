@@ -12,9 +12,9 @@ import org.junit.Test;
 
 
 public class wifiPointTest {
-	static wifiPoint p;
+	private wifiPoint p;
 	@BeforeClass
-	public static void init() {
+	public void init() {
 		this.p=new wifiPoint("ab","cd",1,2);
 	}
 	@Test

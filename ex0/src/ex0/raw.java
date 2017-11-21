@@ -8,7 +8,7 @@ public class raw {
 	 * keep it because we don't have enough time to change all the code
 	 */
 
-		private String id = null;
+		private String id;
 		String date;
 		String time;
 		double lat;
@@ -18,13 +18,8 @@ public class raw {
 		String MAC;
 		int Signal;
 		int Channel, GSM;
-	/**????????????????????????????/what is for?
-	 * Constructor raw by
-	 * @param id
-	 */
-		raw(String id) {
-			this.id= id;
-		}
+
+		
 		/**
 		 * Constructor raw
 		 * @param id
@@ -52,24 +47,6 @@ public class raw {
 			Signal = signal;
 			Channel = channel;
 			GSM = gsm;
-		}
-		/**
-		 * Copy Constructor
-		 * @param r
-		 */
-		
-		private raw(raw r) {
-			this.id = r.id;
-			this.date = r.date;
-			this.time = r.time;
-			this.lat = r.lat;
-			this.lon = r.lon;
-			this.alt = r.alt;
-			SSID = r.SSID;
-			MAC = r.MAC;
-			Signal = r.Signal;
-			Channel = r.Channel;
-			GSM = r.GSM;
 		}
 		
 		
