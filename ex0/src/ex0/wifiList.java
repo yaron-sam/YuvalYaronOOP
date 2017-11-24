@@ -14,8 +14,8 @@ public class wifiList {
 	 * Time, ID, Lat, Lon, Alt, #WiFi networks (up to 10), SSID1, MAC1, Frequncy1, Signal1,
 	SSID2, MAC2, Frequncy2, Signal2, ...
 	 */
-	String id;
-	String date;
+	private String id;
+	private String date;
 	String time;
 	double lat;
 	double lon;
@@ -51,7 +51,7 @@ public class wifiList {
 	 * @param alt
 	 */
 	public wifiList(String id, String date, String time, double lat, double lon, double alt) {
-		this.id =  new String(id);
+		this.setId(new String(id));
 		this.date = date;
 		this.time = time;
 		this.lat = lat;
@@ -76,8 +76,21 @@ public class wifiList {
 	 */
 	@Override
 	public String toString() {
-		return "wifiList [id=" + id + ", date=" + date + ", time=" + time + ", lat=" + lat + ", lon=" + lon + ", alt="
+		return "wifiList [id=" + getId() + ", date=" + date + ", time=" + time + ", lat=" + lat + ", lon=" + lon + ", alt="
 				+ alt + ", points=" + Arrays.deepToString(points.toArray()) + "]";
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getDate() {
+		// TODO Auto-generated method stub
+		return date;
 	}
 
 }

@@ -4,8 +4,8 @@ package ex0;
 public class raw {
 	/**
 	 * important note: 
-	 * we understand that this class is unnecessary, but other hand for now we decide to 
-	 * keep it because we don't have enough time to change all the code
+	 * we understand that this class is unnecessary, but we decided to 
+	 * keep it because we don't have enough time to change the whole code.
 	 */
 
 		private String id;

@@ -28,14 +28,14 @@ public class findGroupId implements Condition<wifiList> {
 
 
 	/**
+	 * test if id equal to one of the id's list.
 	 *@param s
 	 *@return true if id equal to one of the id's in s.
 	 */
 	@Override
 	public boolean test(wifiList s) {
-		// TODO Auto-generated method stub
 		for (String i : list) {
-			if (i.equals(s.id))
+			if (i.equals(s.getId()))
 				return true;
 		}
 		return false;
