@@ -7,7 +7,6 @@
  * this program create by yaron samuel and yuval gabso. 
  * the program create as exercise #0 to oop course, ariel university.
  * 
- * i worte this from yuval
  */
 
 package ex0;
@@ -17,12 +16,17 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-
-public class exercise {
+/**
+ * this is example for all the program.
+ * we describe the action in report #0 .
+ * we want in the next exercise to changethe part of raw function
+ * so just for now they still hare.  
+ *
+ */
+public class example {
 	public static void main(String[] args) {
 
 		Path folder = Paths.get("C:\\Users\\yaron samuel\\Documents\\GIT\\YuvalYaronOOP\\ex0\\data\\testfile");
@@ -43,41 +47,44 @@ public class exercise {
 		/*
 		 * convert raw list to wifi list with all the curract field.
 		 */
-		List<wifiList> wifilist = new ArrayList<wifiList>();
-		wifilist = createWifilist(rawlist);
+		wifiListContainer c = new wifiListContainer(); 
+		c.createWifilist(rawlist);
 
 		// export the wifi list to csv file
 
-		createWifiListFile(wifilist);
+		c.createWifiListFile();
 
 		// take csv file that we just creat and convert him to new wifi list.
+		
+		wifiListContainer b = new wifiListContainer(); 
 
-		wifilist = getWifilistFile("testwifilist.csv");
+		b.getWifilistFile("testwifilist.csv");
 
 		// such filter of wifi list. i filter by: id group, date and location.
 
 		List<String> str = new ArrayList<String>();
 		Collections.addAll(str, "a", "d", "ONEPLUS A3003_28_171012");
-		List<wifiList> res1;
-		List<wifiList> res2;
-		List<wifiList> res3;
-		res1 = filterByIdrgroup(wifilist, str);
+	
+		b.filterByIdrgroup(str);
+		b.CreateKmlfile( "Idfilter.kml");
 		// System.out.println("\nfilter by id group\n"+ res1 + "\n");
 
-		res2 = filterByLoc(wifilist, 32.09048524, 34.87696121);
-		System.out.println("found " + res2.size() + " in  this loction");
+		b.filterByLoc(32.09048524, 34.87696121);
+		b.CreateKmlfile( "locfilter.kml");
+		//System.out.println("found " + res2.size() + " in  this loction");
 		// System.out.println("filter by loction\n" + res2 + '\n');
 
-		res3 = filterByDate(wifilist, "28/10/2017");
+		b.filterByDate("28/10/2017");
+		b.CreateKmlfile( "datefilter.kml");
 		// System.out.println("filter by date\n" + res3 + '\n');
 
 		// for now the part of take the filtered lists and convert them to kml file.
 
-		createKmlfile(res1, "Idfilterkml");
-		createKmlfile(res2, "locfilterkml");
-		createKmlfile(res3, "datefilterkml");
+		
+		
+		
 
-		// for junit test for wifipoint test
+/*		// for junit test for wifipoint test******
 		ArrayList<wifiPoint> p = new ArrayList<wifiPoint>();
 		p.add(new wifiPoint("ab", "cd", 1, 2));
 		wifiList l = new wifiList("NRD90M.1928188_904.2811", "27/10/2017", "16:16:45", 32.16766122, 34.80988156,
@@ -89,57 +96,14 @@ public class exercise {
 		list.add(l);
 		list.add(l2);
 		list.add(l3);
-	}
+		//****************
+*/	}
 
 	/*
 	 * this code base on code we found.
 	 * https://stackoverflow.com/questions/18725039/java-create-a-kml-file-and-
 	 * insert-elements-in-existing-file
 	 */
-	public static void createKmlfile(List<wifiList> list, String filename) {
-		String kmlstart = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
-				+ "<kml xmlns=\"http://www.opengis.net/kml/2.2\"><Document>\n" + "<Folder><name>Wifi Networks</name>\n";
-
-		String temp = kmlstart;
-		for (wifiList r : list) {
-
-			String kmlelement = "\t<Placemark>\n" + "\t<name>" + r.points.get(0).SSID + "</name>\n" + "\t<description>"
-					+ "id: <b>" + r.id + "</b><br/>date: <b>" + r.date + " " + r.time + "</b>" + "<br/>MAC: " + "<b>"
-					+ r.points.get(0).MAC + "</b>" + "<br/>Channel: " + "<b>" + r.points.get(0).Channel + "</b>"
-					+ "<br/>signal: " + "<b>" + r.points.get(0).Signal + "</b>" + "</description>\n" + "\t<Point>\n"
-					+ "\t\t<coordinates>" + r.lon + "," + r.lat + "</coordinates>\n" + "\t</Point>\n"
-					+ "\t</Placemark>\n";
-
-			temp = temp + kmlelement;
-		}
-
-		/*
-		 * <Placemark> <name><![CDATA[dbwguest]]></name> <description><![CDATA[BSSID:
-		 * <b>ce:d7:19:0e:ff:95</b><br/>Capabilities: <b>[ESS]</b><br/>Frequency:
-		 * <b>2462</b><br/>Timestamp: <b>1509211940000</b><br/>Date: <b>2017-10-28
-		 * 20:32:20</b>]]></description><styleUrl>#green</styleUrl> <Point>
-		 * <coordinates>34.80794003,32.16721229</coordinates></Point> </Placemark>
-		 */
-
-		String kmlend = "</Folder>\n" + "</Document></kml>";
-
-		temp = temp + kmlend;
-
-		Writer fwriter;
-
-		try {
-
-			fwriter = new FileWriter(filename + ".kml");
-			fwriter.write(temp);
-			fwriter.flush();
-			fwriter.close();
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-
-		System.out.println("create kml file: " + filename);
-	}
 
 	public static List<raw> getRawfile(String fileName) {
 		// The name of the file to open.
@@ -151,8 +115,6 @@ public class exercise {
 		// This will reference one line at a time
 		String line;
 		List<raw> r = new ArrayList<raw>();
-		List<String> st = new ArrayList<String>();
-		List<String> temp = new ArrayList<String>(2);
 		String[] table = new String[11];
 		try {
 			// FileReader reads text files in the default encoding.
@@ -167,7 +129,6 @@ public class exercise {
 			String id = line.substring(line.indexOf("=", from) + 1, line.indexOf(",", from));
 
 			line = bufferedReader.readLine();
-			int i = 0;
 			while ((line = bufferedReader.readLine()) != null) {
 				table = line.split(",");
 				/*
