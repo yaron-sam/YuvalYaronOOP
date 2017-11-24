@@ -4,7 +4,6 @@
 
 package ex0;
 
-import java.awt.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -51,7 +50,7 @@ public class wifiList {
 	 * @param alt
 	 */
 	public wifiList(String id, String date, String time, double lat, double lon, double alt) {
-		this.setId(new String(id));
+		this.id = id;
 		this.date = date;
 		this.time = time;
 		this.lat = lat;
@@ -80,14 +79,19 @@ public class wifiList {
 				+ alt + ", points=" + Arrays.deepToString(points.toArray()) + "]";
 	}
 
+	/**
+	 * getter for ID
+	 * 
+	 * @return ID
+	 */
 	public String getId() {
 		return id;
 	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
+	/**
+	 * getter for date
+	 * 
+	 * @return date
+	 */
 	public String getDate() {
 		// TODO Auto-generated method stub
 		return date;

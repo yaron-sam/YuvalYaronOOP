@@ -18,7 +18,6 @@ import java.util.List;
 
 import de.micromata.opengis.kml.v_2_2_0.Document;
 import de.micromata.opengis.kml.v_2_2_0.Kml;
-import de.micromata.opengis.kml.v_2_2_0.KmlFactory;
 import de.micromata.opengis.kml.v_2_2_0.Placemark;
 
 /**
@@ -63,7 +62,6 @@ public class wifiListContainer {
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 
 			line = bufferedReader.readLine();
-			int i = 0;
 			while ((line = bufferedReader.readLine()) != null) {
 				table = line.split(",");
 
