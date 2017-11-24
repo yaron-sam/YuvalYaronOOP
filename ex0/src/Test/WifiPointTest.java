@@ -1,43 +1,38 @@
-
-package ex0;
+/**
+ * 
+ */
+package Test;
 
 import static org.junit.Assert.*;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
+import ex0.wifiPoint;
 
 /**
- * @author Yuval_Gabso
+ * @author yaron samuel
  *
  */
-class WifiPointsTest {
-//????????????????????????????????this shit doesnt work, if you have any solution?
+public class WifiPointTest {
+
 	wifiPoint p;
-	@Before
-	public void init()  throws Exception {
-		this.p=new wifiPoint("ab","cd",1,2);
-	}
 	/**
 	 * @throws java.lang.Exception
 	 */
+	@Before
+	public void setUp() throws Exception {
+		this.p=new wifiPoint("ab","cd",1,2);
+	}
 	/**
 	 * Test if the getter SSID is working properly
 	 */
 	@Test
-	public void testGetSSID()
-	{
-		wifiPoint p=new wifiPoint("ab","cd",1,2);
+	public void test() {
 		assertTrue("SSID Not match",p.getSSID().equals("ab"));
 	}
 	/**
-	 * Test if the getter Mac is working properly
+	 * Test if the getter MAC is working properly
 	 */
 	@Test
 	public void testGetMac()
@@ -54,14 +49,18 @@ class WifiPointsTest {
 		wifiPoint p=new wifiPoint("ab","cd",1,2);
 		assertTrue("Signal Not Match",p.getSignal()==1);
 	}
+	
 	/**
 	 * Test if the getter Channel is working properly
 	 */
 	@Test
 	public void testGetChannel()
 	{
-		wifiPoint p=new wifiPoint("ab","cd",1,2);
-		assertTrue("Channel Not Match",p.getSignal()==2);
+		assertTrue("Channel Not Match",p.getChannel()==2);
 	}
+	
+
+	
+	
 
 }
