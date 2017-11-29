@@ -103,7 +103,7 @@ public class wifiListContainer {
 		}
 
 	}
-	
+	//TODO change to create
 	public void createWifilist(List<raw> rawlist) {
 //		List<wifiList> wifilist = new ArrayList<wifiList>();
 		for (int i = 0; i < rawlist.size(); i++) {
@@ -112,6 +112,7 @@ public class wifiListContainer {
 			 * double lat, double lon, double alt, wifiPoint[] list) {
 			 * 
 			 */
+			//TODO 	wifiList r = new wifiList(record.get("id"),... date, time,
 
 			wifiList r = new wifiList(rawlist.get(i).getId(), rawlist.get(i).getDate(), rawlist.get(i).getTime(),
 					rawlist.get(i).getLat(), rawlist.get(i).getLon(), rawlist.get(i).getAlt());
@@ -137,14 +138,14 @@ public class wifiListContainer {
 	/**
 	 * Creating a new wifiListFile
 	 */
-	public  void createWifiListFile() {
+	public  void createWifiListFile(String fileName) {
 		String[] title = { "Date", "Time", "ID", "Lat", "Lon", "Alt", "SSID1", "MAC1", "Frequncy1", "Signal1", "SSID2",
 				"MAC2", "Frequncy2", "Signal2", "SSID3", "MAC3", "Frequncy3", "Signal3", "SSID4", "MAC4", "Frequncy4",
 				"Signal4", "SSID5", "MAC5", "Frequncy5", "Signal5", "SSID6", "MAC6", "Frequncy6", "Signal6", "SSID7",
 				"MAC7", "Frequncy7", "Signal7", "SSID8", "MAC8", "Frequncy8", "Signal8", "SSID9", "MAC9", "Frequncy9",
 				"Signal9", "SSID10", "MAC10", "Frequncy10", "Signal10" };
 
-		Path outputFile = Paths.get("testwifilist.csv");
+		Path outputFile = Paths.get(fileName);
 		
 		List<wifiList> wifilist = this.container;
 		//TODO change the name later 
@@ -159,6 +160,7 @@ public class wifiListContainer {
 			}
 			writer.println();
 			for (int i = 0; i < wifilist.size(); i++) {
+				//TODO print wifilist in the class
 				writer.print(wifilist.get(i).getDate() + ',' + wifilist.get(i).time + ',' + wifilist.get(i).getId() + ','
 						+ wifilist.get(i).lat + ',' + wifilist.get(i).lon + ',' + wifilist.get(i).alt);
 				
@@ -174,33 +176,33 @@ public class wifiListContainer {
 			e.printStackTrace();
 		}
 	}
-	/**
-	 * Filter wifiList according to groupId 
-	 * @param users
-	 */
-	public void filterByIdrgroup( List<String> users) {
-		Condition<wifiList> group = new findGroupId(users);
-		this.container = (List<wifiList>)  filter(this.container, group);
-	}
-	/**
-	 * Filter wifiList according to location
-	 * @param lat latitude
-	 * @param lon longitude
-	 */
-	public void filterByLoc( double lat, double lon) {
-//		Condition<wifiList> condition = s -> s.lat == lat && s.lon == lon;
-		Condition<wifiList> condition = new findLoction(lat, lon);
-		System.out.println(condition);
-		this.container = (List<wifiList>) filter(this.container, condition);
-	}
-	/**
-	 * Filter wifiList according to date
-	 * @param date
-	 */
-	public void filterByDate( String date) {
-		Condition<wifiList> condition = s -> s.getDate().equals(date);
-		this.container = (List<wifiList>) filter(this.container, condition);
-	}
+//	/**
+//	 * Filter wifiList according to groupId 
+//	 * @param users
+//	 */
+//	public void filterByIdrgroup( List<String> users) {
+//		Condition<wifiList> group = new findGroupId(users);
+//		this.container = (List<wifiList>)  filter(this.container, group);
+//	}
+//	/**
+//	 * Filter wifiList according to location
+//	 * @param lat latitude
+//	 * @param lon longitude
+//	 */
+//	public void filterByLoc( double lat, double lon) {
+////		Condition<wifiList> condition = s -> s.lat == lat && s.lon == lon;
+//		Condition<wifiList> condition = new findLoction(lat, lon);
+//		System.out.println(condition);
+//		this.container = (List<wifiList>) filter(this.container, condition);
+//	}
+//	/**
+//	 * Filter wifiList according to date
+//	 * @param date
+//	 */
+//	public void filterByDate( String date) {
+//		Condition<wifiList> condition = s -> s.getDate().equals(date);
+//		this.container = (List<wifiList>) filter(this.container, condition);
+//	}
 	/**
 	 * General filter (abstract filter)
 	 * @param items
@@ -216,7 +218,7 @@ public class wifiListContainer {
 		}
 		return output;
 	}
-
+//filter(wifiListContainer L,findLocation(lat,lon));
 
 	/**
 	 * fix format of time to be hh:mm:ss
