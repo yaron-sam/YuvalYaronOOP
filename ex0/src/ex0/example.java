@@ -67,16 +67,16 @@ public class example {
 		List<String> str = new ArrayList<String>();
 		Collections.addAll(str, "a", "d", "ONEPLUS A3003_28_171012");
 	
-		b.filterByIdrgroup(str);
+		//b.filterByIdrgroup(str);
 		b.CreateKmlfile( "Idfilter.kml");
 		// System.out.println("\nfilter by id group\n"+ res1 + "\n");
 
-		b.filterByLoc(32.1678190337, 34.8061381649);
+		//b.filterByLoc(32.1678190337, 34.8061381649);
 		b.CreateKmlfile( "locfilter.kml");
 		//System.out.println("found " + res2.size() + " in  this loction");
 		// System.out.println("filter by loction\n" + res2 + '\n');
 
-		b.filterByDate("28/10/2017");
+		//b.filterByDate("28/10/2017");
 		b.CreateKmlfile( "datefilter.kml");
 		// System.out.println("filter by date\n" + res3 + '\n');
 
