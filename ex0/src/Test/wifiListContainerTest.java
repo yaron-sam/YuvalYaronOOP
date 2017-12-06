@@ -5,17 +5,16 @@ package Test;
 
 import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
-import org.junit.jupiter.api.BeforeEach;
-
-import ex0.wifiList;
-import ex0.wifiPoint;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import ex0.wifiList;
+import ex0.wifiPoint;
+
 /**
  * @author Yuval_Gabso
- *
+ * 
  */
 class wifiListContainerTest {
 	
@@ -23,10 +22,9 @@ class wifiListContainerTest {
 	/**
 	 * @throws java.lang.Exception
 	 */
-	@BeforeEach
+	@Before
 	void setUp() throws Exception {
 	}
-	@Test
 	public void testFindGroupId()
 	{
 		ArrayList<wifiPoint> p = new ArrayList<wifiPoint>();
@@ -40,8 +38,7 @@ class wifiListContainerTest {
 		list.add(l);
 		list.add(l2);
 		list.add(l3);
-		assertTrue("SSID Not match", l2.getId().equals("anotherID"));
-		
+		assertTrue("SSID Not match", list.get(2).getId().equals("anotherID"));
 		//TODO we need to complete the tester
 	}
 

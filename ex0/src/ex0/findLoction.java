@@ -4,8 +4,8 @@
  */
 
 package ex0;
-
 public class findLoction implements Condition<wifiList> {
+	final double  r = 0.005;
 
 	double lat,lon;
 	
@@ -39,10 +39,11 @@ public class findLoction implements Condition<wifiList> {
 	@Override
 	public boolean test(wifiList s) {
 		// TODO Auto-generated method stub
-		if(s.lat == lat && s.lon == lon)
+	//	double result =  6371000 * Math.acos(Math.cos(Math.toRadians(90-this.lat)) * Math.cos(Math.toRadians((90-s.lat))) + Math.sin(Math.toRadians(90-this.lat)) * Math.sin(Math.toRadians(90-s.lat)) * Math.cos(Math.toRadians(this.lon-s.lon)));
+double result=Math.sqrt(Math.pow(this.lat-s.lat,2)+Math.pow(this.lon-s.lon,2));
+		if(result<=r)
 			return true;
 		else
 			return false;
 	}
-
 }
