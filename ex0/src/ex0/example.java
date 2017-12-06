@@ -52,13 +52,15 @@ public class example {
 
 		// export the wifi list to csv file
 
-		c.createWifiListFile();
+		String fileSName="testwifilist.csv";
+		c.createWifiListFile(fileSName); 
 
 		// take csv file that we just creat and convert him to new wifi list.
 		
+		
 		wifiListContainer b = new wifiListContainer(); 
 
-		b.getWifilistFile("testwifilist.csv");
+		b.getWifilistFile(fileSName);
 
 		// such filter of wifi list. i filter by: id group, date and location.
 
