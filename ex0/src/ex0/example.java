@@ -29,7 +29,7 @@ import java.util.List;
 public class example {
 	public static void main(String[] args) {
 
-		Path folder = Paths.get("C:\\Users\\yaron samuel\\Documents\\GIT\\YuvalYaronOOP\\ex0\\data\\testfile");
+		Path folder = Paths.get("C:\\Users\\yaron samuel\\Documents\\GIT\\YuvalYaronOOP\\ex0\\data\\data");
 		List<String> paths = readFolder(folder);
 
 		paths.removeIf(x -> !x.endsWith("csv"));
@@ -69,7 +69,7 @@ public class example {
 		b.CreateKmlfile( "Idfilter.kml");
 		// System.out.println("\nfilter by id group\n"+ res1 + "\n");
 
-		b.filterByLoc(32.09048524, 34.87696121);
+		b.filterByLoc(32.1678190337, 34.8061381649);
 		b.CreateKmlfile( "locfilter.kml");
 		//System.out.println("found " + res2.size() + " in  this loction");
 		// System.out.println("filter by loction\n" + res2 + '\n');

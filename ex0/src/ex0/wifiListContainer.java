@@ -217,7 +217,10 @@ public class wifiListContainer {
 		return output;
 	}
 
-
+	public <T> void locationOf( PointType pointtype) {
+		this.container  =  pointtype.find(this.container);
+	}
+	
 	/**
 	 * fix format of time to be hh:mm:ss
 	 * 
@@ -309,5 +312,30 @@ public class wifiListContainer {
 
 	}
 
+	public static void main(String[] args) {
+		wifiListContainer c  = new wifiListContainer();
+		PointType p  = new Mac("we was here");
+		c.locationOf(p);
+		
+		c.locationOf( new PointType() {
+			
+			public <T> List<T> find(List<wifiList> container){
+				System.out.println("abc");
+				return null;
+			}
+			
+		});
+		
+		
+		c.locationOf( new Mac("hh") );
+		ArrayList<String> list =new ArrayList<String>();
+		list.add("hello");
+		list.add("shalom");
+		list.add("shalom");
+		PointType p2  = new User(list);
+		c.locationOf(p2);
+
+
+	}
 
 }

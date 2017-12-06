@@ -14,7 +14,7 @@ import ex0.wifiPoint;
 
 /**
  * @author Yuval_Gabso
- *
+ * 
  */
 class wifiListContainerTest {
 	
