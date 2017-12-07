@@ -320,19 +320,30 @@ public class wifiListContainer {
 
 	public static void main(String[] args) {
 		wifiListContainer c  = new wifiListContainer();
-		PointType p  = new Mac("we was here");
+		
+		String fileSName="testwifilist.csv";
+
+		// take csv file that we just creat and convert him to new wifi list.
+		
+
+
+		c.getWifilistFile(fileSName);
+		
+		PointType p  = new Mac("48:db:50:34:c7:fb");
 		c.locationOf(p);
 		
-		c.locationOf( new PointType() {
-			
-			public <T> List<T> find(List<wifiList> container){
-				System.out.println("abc");
-				return null;
-			}
-			
-		});
+		c.createWifiListFile("testmac.csv");
 		
+//		c.locationOf( new PointType() {
+//			
+//			public <T> List<T> find(List<wifiList> container){
+//				System.out.println("abc");
+//				return null;
+//			}
+//			
+//		});
 		
+//		another way to call mac interface
 		c.locationOf( new Mac("hh") );
 		ArrayList<String> list =new ArrayList<String>();
 		list.add("hello");
