@@ -21,7 +21,7 @@ public class User implements PointType {
 		System.out.println("user class");
 		System.out.println(this.list.toString());
 
-		return null;
+		return (List<T>) list;
 	}
 
 }

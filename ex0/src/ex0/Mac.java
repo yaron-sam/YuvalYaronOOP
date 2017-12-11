@@ -1,7 +1,13 @@
 package ex0;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
 
 public class Mac implements PointType {
 	
@@ -22,9 +28,7 @@ public class Mac implements PointType {
 	@Override
 	public <T> List<T> find(List<wifiList> item) {
 		// TODO Auto-generated method stub
-		//String mac = (String) this.mac;
-//		wifiList s = new wifiList(mac, mac, mac, 0, 0, 0);
-//		s.points.forEach((points)->System.out.println(points.MAC));
+
 		
 //		Condition<wifiList> conditiona = s ->{
 //			boolean flag =false;
@@ -62,36 +66,63 @@ public class Mac implements PointType {
 				return flag;
 			}
 		};*/
-		
+	
+		//filter to row in continer with our mac adress. 
 		List<wifiList> filtered = (List<wifiList>) wifiListContainer.filter(item, conditionc);
 		
 		/*for(wifiList l:filtered) {
 			l.points.removeIf(s->!s.MAC.equals(mac) );
 		}*/
 		
-		filtered.forEach((list) -> list.points.removeIf(s->!s.MAC.equals(mac) ));
-		//להשאיר רק את המאקים הרלוונטים - למחוק את כל השאר
-		//להפעיל את הנוסחא שלנו על מה שיש
-		
-		System.out.println(mac);
-		System.out.println(this.mac);
 
-		//filter to row in continer with our mac adress. 
-//		Condition<wifiList> condition = s -> s.equals(this.mac);
-//		List<wifiList> filtered = (List<wifiList>) wifiListContainer.filter(item, condition);
+		filtered.forEach((list) -> list.points.removeIf(s->!s.MAC.equals(mac) ));
 		
-		//sort filtered
+		Collections.sort(filtered, ( o1,  o2) -> { 
+			if (o1 == null && o2 == null) {
+	                return 0;
+	            }
+	            if (o1 == null) {
+	                return 1;
+	            }
+	            if (o2 == null) {
+	                return -1;
+	            }
+			return o2.points.get(0).getChannel()-o1.points.get(0).getChannel();
+		});
 		
 		
-		//calc mass
-		double w1,w2,w3;
-		for (int i = 0; i < 3; i++) {
-			
+		double aloc[] = new double[3];
+		double w[] = new double[4];
+		double totalW=0.0;
+		
+		//calc weight
+		for (int i = 0; i < w.length && i<filtered.size(); i++) {
+			w[i]=1/Math.pow((double) filtered.get(i).points.get(0).getChannel(),2);
+			totalW+=w[i];
 		}
-		
-		return (List<T>) filtered;
+		//calc average of loction
+		for (int i = 0; i < w.length && i<filtered.size(); i++) {
+			aloc[0] += w[i]*filtered.get(i).lat;
+			aloc[1] += w[i]*filtered.get(i).lon;
+			aloc[2] += w[i]*filtered.get(i).alt;
+		}
+		for (int i = 0; i < aloc.length; i++) {
+			aloc[i]=aloc[i]/totalW;
+		}
+//		ArrayList<Double> arrayList = new ArrayList<>(Arrays.asList(aloc));
+//				arrayList  = Arrays.asList(aloc);
+
+//				List<Double> list =  Arrays.asList(aloc).;
+//		List<Double> list = new ArrayList<Double>();
+	
+//		Double[] doubleArray = ArrayUtils.toObject(durationValueArray);
+//		List<Double> list = Arrays.asList(doubleArray);
+		return (List<T>) DoubleStream.of(aloc).boxed().collect(Collectors.toList());
+
+//		return (List<T>) Arrays.asList(aloc);
 	}
 	
+
 	  String getMac()
 	{
 		return this.mac;

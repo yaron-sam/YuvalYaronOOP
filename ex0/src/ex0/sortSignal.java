@@ -24,7 +24,7 @@ public class sortSignal implements Comparator<wifiPoint>{
 	            }
 			//System.out.println("ans =" +  (o1.getSignal()-o2.getSignal())); for debuging
 
-			return o1.getSignal()-o2.getSignal();
+			return o2.getSignal()-o1.getSignal();
 		}
 
 	}

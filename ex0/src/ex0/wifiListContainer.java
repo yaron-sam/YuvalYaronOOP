@@ -12,6 +12,7 @@ import java.nio.file.Paths;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
@@ -221,8 +222,12 @@ public class wifiListContainer {
 
 
 	public <T> void locationOf( PointType pointtype) {
-		this.container  =  pointtype.find(this.container);
-	}
+		List<Double> loc  =  new ArrayList<Double>();
+		loc = pointtype.find(this.container);
+		System.out.println(loc.toString());
+		System.out.println(loc);
+		System.out.println(Arrays.toString(loc.toArray()));
+		}
 	
 
 //filter(wifiListContainer L,findLocation(lat,lon));
@@ -329,19 +334,12 @@ public class wifiListContainer {
 
 		c.getWifilistFile(fileSName);
 		
-		PointType p  = new Mac("48:db:50:34:c7:fb");
+		PointType p  = new Mac("yaron");
 		c.locationOf(p);
 		
 		c.createWifiListFile("testmac.csv");
 		
-//		c.locationOf( new PointType() {
-//			
-//			public <T> List<T> find(List<wifiList> container){
-//				System.out.println("abc");
-//				return null;
-//			}
-//			
-//		});
+
 		
 //		another way to call mac interface
 		c.locationOf( new Mac("hh") );
