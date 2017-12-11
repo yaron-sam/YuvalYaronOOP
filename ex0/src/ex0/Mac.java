@@ -7,11 +7,17 @@ public class Mac implements PointType {
 	
 	private String mac;
 	
-
+/**
+ * Constructor
+ * @param mac
+ */
 	public Mac(String mac) {
 		this.mac = mac;
 	}
-
+/**
+ * gets List<wifiList>item
+ * return filtered list
+ */
 
 	@Override
 	public <T> List<T> find(List<wifiList> item) {
@@ -86,7 +92,10 @@ public class Mac implements PointType {
 		return (List<T>) filtered;
 	}
 	
-	
+	  String getMac()
+	{
+		return this.mac;
+	}
 /*	public static void main(String[] args) {
 		String fileSName="testwifilist.csv";
 
