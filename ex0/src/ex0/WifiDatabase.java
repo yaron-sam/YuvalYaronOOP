@@ -54,5 +54,9 @@ public class WifiDatabase {
 		System.out.println(db.nRowsWithHighestY(3));
 		System.out.println(db.kRowsWithHighestY(3));
 	}
-
+	/*
+	//new WifiSample(6,4,5),	
+	new WifiSample(2,3,1),	
+	//new WifiSample(5,6,4)
+*/
 }

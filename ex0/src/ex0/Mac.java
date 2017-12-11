@@ -59,6 +59,11 @@ public class Mac implements PointType {
 		
 		List<wifiList> filtered = (List<wifiList>) wifiListContainer.filter(item, conditionc);
 		
+		/*for(wifiList l:filtered) {
+			l.points.removeIf(s->!s.MAC.equals(mac) );
+		}*/
+		
+		filtered.forEach((list) -> list.points.removeIf(s->!s.MAC.equals(mac) ));
 		//להשאיר רק את המאקים הרלוונטים - למחוק את כל השאר
 		//להפעיל את הנוסחא שלנו על מה שיש
 		
