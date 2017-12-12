@@ -90,7 +90,6 @@ public class Mac implements PointType {
 			return o2.getPoints().get(0).getChannel()-o1.getPoints().get(0).getChannel();
 		});
 		
-		
 		double aloc[] = new double[3];
 		double w[] = new double[4];
 		double totalW=0.0;
