@@ -40,7 +40,7 @@ public class findLoction implements Condition<wifiList> {
 	public boolean test(wifiList s) {
 		// TODO Auto-generated method stub
 	//	double result =  6371000 * Math.acos(Math.cos(Math.toRadians(90-this.lat)) * Math.cos(Math.toRadians((90-s.lat))) + Math.sin(Math.toRadians(90-this.lat)) * Math.sin(Math.toRadians(90-s.lat)) * Math.cos(Math.toRadians(this.lon-s.lon)));
-double result=Math.sqrt(Math.pow(this.lat-s.lat,2)+Math.pow(this.lon-s.lon,2));
+double result=Math.sqrt(Math.pow(this.lat-s.getLat(),2)+Math.pow(this.lon-s.getLon(),2));
 		if(result<=r)
 			return true;
 		else

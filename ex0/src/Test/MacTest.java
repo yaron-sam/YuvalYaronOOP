@@ -21,7 +21,7 @@ import ex0.wifiPoint;
  *
  */
 class MacTest {
- ArrayList<wifiList> s;
+ wifiList s;
 @BeforeEach
 	/**
 	 * @throws java.lang.Exception
@@ -34,15 +34,22 @@ class MacTest {
 	/**
 	 * @throws java.lang.Exception
 	 */
+@Test
 	public <T> List<T> findTest(List<wifiList> item) {
-		Condition<wifiList> conditionc = s ->{boolean flag =false;
-		for (wifiPoint p:s.points) {
+		
+		Condition<wifiList> conditionc = a ->{boolean flag =false;
+
+		for (wifiPoint p:a.getPoints()) {
 			if(p.getMAC().equals(item))
 				flag =true; 	
 		}
 		return flag;
 };
-		
+		int[] arr = {1,44534,353454,4543};
+		for (int i : arr) {
+			
+		}
+		return null;
 	}
 	
 	@BeforeEach

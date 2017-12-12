@@ -14,11 +14,11 @@ public class wifiList {
 	 */
 	private String id;
 	private String date;
-	String time;
-	double lat;
-	double lon;
-	double alt;
-	ArrayList<wifiPoint> points;
+	private String time;
+	private double lat;
+	private double lon;
+	private double alt;
+	private ArrayList<wifiPoint> points;
 /**
  * Constructor wifiList (with all variable)
  * @param id
@@ -32,11 +32,11 @@ public class wifiList {
 	public wifiList(String id, String date, String time, double lat, double lon, double alt, ArrayList<wifiPoint> points) {
 		this.id = id;
 		this.date = date;
-		this.time = time;
-		this.lat = lat;
-		this.lon = lon;
-		this.alt = alt;
-		this.points = new ArrayList<wifiPoint>();
+		this.time=time;
+		this.lat=lat;
+		this.lon=lon;
+		this.lat=lat;
+		this.points=points;
 	}
 	
 	/**
@@ -51,11 +51,11 @@ public class wifiList {
 	public wifiList(String id, String date, String time, double lat, double lon, double alt) {
 		this.id = id;
 		this.date = date;
-		this.time = time;
-		this.lat = lat;
-		this.lon = lon;
-		this.alt = alt;
-		this.points = new ArrayList<wifiPoint>();
+		this.time=time;
+		this.lat=lat;
+		this.lon=lon;
+		this.alt=alt;
+		this.points=new ArrayList<wifiPoint>();   
 	}
 	
 	/**
@@ -63,10 +63,10 @@ public class wifiList {
 	 * @param p wifiPoint we want to add.
 	 */
 	public void wifiPointAdd(wifiPoint p) {
-		points.add(p);
-		points.sort( new sortSignal());
-		while (points.size() > 10) {
-			points.remove(10);
+		getPoints().add(p);
+		getPoints().sort( new sortSignal());
+		while (getPoints().size() > 10) {
+			getPoints().remove(10);
 		}
 	}
 	/**
@@ -74,8 +74,8 @@ public class wifiList {
 	 */
 	@Override
 	public String toString() {
-		return "wifiList [id=" + getId() + ", date=" + date + ", time=" + time + ", lat=" + lat + ", lon=" + lon + ", alt="
-				+ alt + ", points=" + Arrays.deepToString(points.toArray()) + "]";
+		return "wifiList [id=" + getId() + ", date=" + date + ", time=" + getTime() + ", lat=" + getLat() + ", lon=" + getLon() + ", alt="
+				+ getAlt() + ", points=" + Arrays.deepToString(getPoints().toArray()) + "]";
 	}
 
 	/**
@@ -84,7 +84,7 @@ public class wifiList {
 	 * @return ID
 	 */
 	public String getId() {
-		return id;
+		return this.id;
 	}
 	/**
 	 * getter for date
@@ -93,7 +93,52 @@ public class wifiList {
 	 */
 	public String getDate() {
 		// TODO Auto-generated method stub
-		return date;
+		return this.date;
+	}
+	/**
+	 * getter for Lat
+	 * @return
+	 */
+	public double getLat() {
+		return lat;
+	}
+	/**
+	 * getter for Lon
+	 * @return
+	 */
+	public double getLon() {
+		return lon;
+	}
+
+	/**
+	 * @return the time
+	 */
+	public String getTime() {
+		return time;
+	}
+
+	
+
+	/**
+	 * @return the alt
+	 */
+	public double getAlt() {
+		return alt;
+	}
+
+	
+	/**
+	 * @return the points
+	 */
+	public ArrayList<wifiPoint> getPoints() {
+		return this.points;
+	}
+
+	/**
+	 * @param points the points to set
+	 */
+	public void setPoints(ArrayList<wifiPoint> points) {
+		this.points = points;
 	}
 
 }

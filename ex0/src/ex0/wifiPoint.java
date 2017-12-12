@@ -2,25 +2,25 @@ package ex0;
 
 
 public class wifiPoint {
-	String SSID;
-	String MAC;
-	int Signal;
-	int Channel;
+	private String SSID;
+	private  String MAC;
+	private  int Signal;
+	private  int Channel;
 	
 
 	/**
 	 * Contractor of wifiPoint 
-	 * @param sSID
-	 * @param mAC
-	 * @param signal
-	 * @param channel
+	 * @param SsSID
+	 * @param SAC
+	 * @param Signal
+	 * @param Channel
 	 */
-	public wifiPoint(String sSID, String mAC, int signal, int channel) {
+	public wifiPoint(String SSID, String MAC, int Signal, int Channel) {
 		super();
-		SSID = sSID;
-		MAC = mAC;
-		Signal = signal;
-		Channel = channel;
+		SSID = this.SSID;
+		MAC =this.MAC;
+		Signal =this.Signal;
+		Channel =this.Channel;
 	}
 	/**
 	 * Print SSID, MAC, Signal and channel from wifiPoint

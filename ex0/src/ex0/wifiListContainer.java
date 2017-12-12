@@ -120,8 +120,8 @@ public class wifiListContainer {
 
 
 			while (rawlist.size() > i && r.getId().equals(rawlist.get(i).getId()) && r.getDate().equals(rawlist.get(i).getDate())
-					&& r.time.equals(rawlist.get(i).getTime()) && r.lat == rawlist.get(i).getLat()
-					&& r.lon == rawlist.get(i).getLon() && r.alt == rawlist.get(i).getAlt()) {
+					&& r.getTime().equals(rawlist.get(i).getTime()) && r.getLat() == rawlist.get(i).getLat()
+					&& r.getLon() == rawlist.get(i).getLon() && r.getAlt() == rawlist.get(i).getAlt()) {
 
 				r.wifiPointAdd(new wifiPoint(rawlist.get(i).getSSID(), rawlist.get(i).getMAC(),
 						rawlist.get(i).getSignal(), rawlist.get(i).getChannel()));
@@ -162,12 +162,12 @@ public class wifiListContainer {
 			writer.println();
 			for (int i = 0; i < wifilist.size(); i++) {
 				//TODO print wifilist in the class
-				writer.print(wifilist.get(i).getDate() + ',' + wifilist.get(i).time + ',' + wifilist.get(i).getId() + ','
-						+ wifilist.get(i).lat + ',' + wifilist.get(i).lon + ',' + wifilist.get(i).alt);
+				writer.print(wifilist.get(i).getDate() + ',' + wifilist.get(i).getTime() + ',' + wifilist.get(i).getId() + ','
+						+ wifilist.get(i).getLat() + ',' + wifilist.get(i).getLon() + ',' + wifilist.get(i).getAlt());
 				
-				for (int j = 0; j < wifilist.get(i).points.size()  && j<10 ; j++) {
-					writer.print(',' + wifilist.get(i).points.get(j).SSID + ',' + wifilist.get(i).points.get(j).MAC + ','
-							+ wifilist.get(i).points.get(j).Channel + ',' + wifilist.get(i).points.get(j).Signal);
+				for (int j = 0; j < wifilist.get(i).getPoints().size()  && j<10 ; j++) {
+					writer.print(',' + wifilist.get(i).getPoints().get(j).getSSID() + ',' + wifilist.get(i).getPoints().get(j).getMAC() + ','
+							+ wifilist.get(i).getPoints().get(j).getChannel() + ',' + wifilist.get(i).getPoints().get(j).getSignal());
 				}
 				writer.println();
 			}
@@ -296,16 +296,16 @@ public class wifiListContainer {
 
 			for (wifiList l : this.container) {
 
-				Double longitude = l.lon;
-				Double latitude = l.lat;
-				String date = new String(l.getDate() + " " + timeFormatFix(l.time));
+				Double longitude = l.getLon();
+				Double latitude = l.getLat();
+				String date = new String(l.getDate() + " " + timeFormatFix(l.getTime()));
 				date = timeStampFormatFix(date);
 
-				String description = "id: <b>" + l.getId() + "</b><br/>date: <b>" + l.getDate() + " " + l.time + "</b>"
-						+ "<br/>MAC: " + "<b>" + l.points.get(0).MAC + "</b>" + "<br/>Channel: " + "<b>"
-						+ l.points.get(0).Channel + "</b>" + "<br/>signal: " + "<b>" + l.points.get(0).Signal + "</b>";
+				String description = "id: <b>" + l.getId() + "</b><br/>date: <b>" + l.getDate() + " " + l.getTime() + "</b>"
+						+ "<br/>MAC: " + "<b>" + l.getPoints().get(0).getMAC() + "</b>" + "<br/>Channel: " + "<b>"
+						+ l.getPoints().get(0).getChannel() + "</b>" + "<br/>signal: " + "<b>" + l.getPoints().get(0).getSignal() + "</b>";
 
-				Placemark place = document.createAndAddPlacemark().withName(l.points.get(0).SSID);
+				Placemark place = document.createAndAddPlacemark().withName(l.getPoints().get(0).getSSID());
 				place.createAndSetTimeStamp().withWhen(date);
 				place.createAndSetPoint().addToCoordinates(longitude, latitude);
 				place.setDescription(description);
