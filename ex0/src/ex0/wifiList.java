@@ -18,7 +18,7 @@ public class wifiList {
 	private double lat;
 	private double lon;
 	private double alt;
-	private ArrayList<wifiPoint> points;
+	public ArrayList<wifiPoint> points;
 /**
  * Constructor wifiList (with all variable)
  * @param id
