@@ -16,9 +16,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
-import ex0.Mac;
-import ex0.wifiList;
-import ex0.wifiPoint;
+
 import de.micromata.opengis.kml.v_2_2_0.Document;
 import de.micromata.opengis.kml.v_2_2_0.Kml;
 import de.micromata.opengis.kml.v_2_2_0.Placemark;
@@ -212,9 +210,9 @@ public class wifiListContainer {
 	 * @param condition
 	 * @return new list after filtering
 	 */
-	static <T> Collection<wifiList> filter(Collection<wifiList> items, Condition<wifiList> condition) {
-		Collection<wifiList> output = new ArrayList<wifiList>(); // initialize empty list
-		for (wifiList item : items) {
+	static <T> Collection<T> filter(Collection<T> items, Condition<T> condition) {
+		Collection<T> output = new ArrayList<T>(); // initialize empty list
+		for (T item : items) {
 			if (condition.test(item)) {
 				output.add(item);
 			}
