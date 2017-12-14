@@ -32,6 +32,23 @@ public class Mac implements PointType {
  * return filtered list
  */
 
+	public <T>List<T>find(List<wifiList>item,List<Object>DataSearch)
+	{
+		Condition<wifiList>conditionA=s->{
+			boolean flag=false; 
+			for (wifiPoint p:s.getPoints())
+				for(wifiPoint p1:s.getDataSearch())
+					
+					
+		}
+		
+			
+			List<wifiList> filtered=(List<wifiList>)wifiListContainer.filter(items, condition)
+		
+		
+		
+		return null;
+	}
 	@Override
 	public <T> List<T> find(List<wifiList> item) {
 		// TODO Auto-generated method stub
