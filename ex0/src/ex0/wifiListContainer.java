@@ -165,9 +165,9 @@ public class wifiListContainer {
 				writer.print(wifilist.get(i).getDate() + ',' + wifilist.get(i).getTime() + ',' + wifilist.get(i).getId() + ','
 						+ wifilist.get(i).getLat() + ',' + wifilist.get(i).getLon() + ',' + wifilist.get(i).getAlt());
 				
-				for (int j = 0; j < wifilist.get(i).getPoints().size()  && j<10 ; j++) {
-					writer.print(',' + wifilist.get(i).getPoints().get(j).getSSID() + ',' + wifilist.get(i).getPoints().get(j).getMAC() + ','
-							+ wifilist.get(i).getPoints().get(j).getChannel() + ',' + wifilist.get(i).getPoints().get(j).getSignal());
+				for (int j = 0; j < wifilist.get(i).points.size()  && j<10 ; j++) {
+					writer.print(',' + wifilist.get(i).points.get(j).getSSID() + ',' + wifilist.get(i).points.get(j).getMAC() + ','
+							+ wifilist.get(i).points.get(j).getChannel() + ',' + wifilist.get(i).points.get(j).getSignal());
 				}
 				writer.println();
 			}
@@ -302,10 +302,10 @@ public class wifiListContainer {
 				date = timeStampFormatFix(date);
 
 				String description = "id: <b>" + l.getId() + "</b><br/>date: <b>" + l.getDate() + " " + l.getTime() + "</b>"
-						+ "<br/>MAC: " + "<b>" + l.getPoints().get(0).getMAC() + "</b>" + "<br/>Channel: " + "<b>"
-						+ l.getPoints().get(0).getChannel() + "</b>" + "<br/>signal: " + "<b>" + l.getPoints().get(0).getSignal() + "</b>";
+						+ "<br/>MAC: " + "<b>" + l.points.get(0).getMAC() + "</b>" + "<br/>Channel: " + "<b>"
+						+ l.points.get(0).getChannel() + "</b>" + "<br/>signal: " + "<b>" + l.points.get(0).getSignal() + "</b>";
 
-				Placemark place = document.createAndAddPlacemark().withName(l.getPoints().get(0).getSSID());
+				Placemark place = document.createAndAddPlacemark().withName(l.points.get(0).getSSID());
 				place.createAndSetTimeStamp().withWhen(date);
 				place.createAndSetPoint().addToCoordinates(longitude, latitude);
 				place.setDescription(description);

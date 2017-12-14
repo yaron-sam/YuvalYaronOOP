@@ -16,11 +16,10 @@ public class wifiPoint {
 	 * @param Channel
 	 */
 	public wifiPoint(String SSID, String MAC, int Signal, int Channel) {
-		
-		this.SSID=SSID;
-		this.MAC=MAC ;
-		this.Signal=Signal;
-		 this.Channel=Channel;
+		this.SSID = SSID;
+		this.MAC =MAC;
+		this.Signal =Signal;
+		this.Channel =Channel;
 	}
 	/**
 	 * Print SSID, MAC, Signal and channel from wifiPoint

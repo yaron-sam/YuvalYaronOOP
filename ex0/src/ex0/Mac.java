@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 //import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
+
 import ex0.wifiList;
 import ex0.wifiPoint;
 import ex0.wifiListContainer;
@@ -32,38 +35,45 @@ public class Mac implements PointType {
 	@Override
 	public <T> List<T> find(List<wifiList> item) {
 		// TODO Auto-generated method stub
-/*
+
 		
-		Condition<wifiList> conditiona = s ->{
-			boolean flag =false;
-			s.getPoints().forEach(a -> {if(a.equals(this.mac))
-			flag =true;
-			});
-			return flag; 	
-		};	
-		*/				
+//		Condition<wifiList> conditiona = s ->{
+//			boolean flag =false;
+//			s.points.forEach(MAC -> {if(MAC.equals(this.mac))
+//			flag =true;
+//			}); 	
+//		};					
 		
-		Condition<wifiList> conditionc = s -> {
-			boolean flag = false;
-			for (wifiPoint p : s.getPoints()) {
-				if (p.getMAC().equals(this.mac))
-					flag = true;
-			}
-			return flag;
-		};
-	/*	
+	Condition<wifiList> conditionb = s ->{
+		boolean flag =false;
+		for (wifiPoint p:s.getPoints()) {
+								if(p.getMAC().equals(this.mac))
+									flag =true; 	
+							}
+							return flag;
+	};
 		
-	Condition<wifiList> conditiond = new Condition<wifiList>() {
+		
+		Condition<wifiList> conditionc = s ->{boolean flag =false;
+							for (wifiPoint p:s.points) {
+								if(p.getMAC().equals(this.mac))
+									flag =true; 	
+							}
+							return flag;
+	};
+		
+		
+/*		Condition<wifiList> conditiond = new Condition<wifiList>() {
 			public boolean test(wifiList s) {
 				boolean flag =false;
-				for (wifiPoint p:s.getPoints()) {
-					if(p.getMAC().equals(this.mac))
+				for (wifiPoint p:s.points) {
+					if(p.MAC.equals(this.mac))
 						flag =true; 	
 				}
 				return flag;
 			}
-		};
-	*/
+		};*/
+	
 		//filter to row in continer with our mac adress. 
 		List<wifiList> filtered = (List<wifiList>) wifiListContainer.filter(item, conditionc);
 		
@@ -72,7 +82,7 @@ public class Mac implements PointType {
 		}*/
 		
 
-		filtered.forEach((list) -> list.getPoints().removeIf(s->!s.getMAC().equals(mac) ));
+		filtered.forEach((list) -> list.points.removeIf(s->!s.getMAC().equals(mac) ));
 		
 		Collections.sort(filtered, ( o1,  o2) -> { 
 			if (o1 == null && o2 == null) {
@@ -84,7 +94,7 @@ public class Mac implements PointType {
 	            if (o2 == null) {
 	                return -1;
 	            }
-			return o2.getPoints().get(0).getChannel()-o1.getPoints().get(0).getChannel();
+			return o2.points.get(0).getChannel()-o1.points.get(0).getChannel();
 		});
 		
 		double aloc[] = new double[3];
@@ -93,7 +103,7 @@ public class Mac implements PointType {
 		
 		//calc weight
 		for (int i = 0; i < w.length && i<filtered.size(); i++) {
-			w[i]=1/Math.pow((double) filtered.get(i).getPoints().get(0).getChannel(),2);
+			w[i]=1/Math.pow((double) filtered.get(i).points.get(0).getChannel(),2);
 			totalW+=w[i];
 		}
 		//calc average of loction
