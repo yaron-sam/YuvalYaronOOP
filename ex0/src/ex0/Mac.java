@@ -3,13 +3,20 @@ package ex0;
  * @author yaron samuel
  */
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
+//import java.util.ArrayList;
+//import java.util.Arrays;
+//import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
+//import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
+
+import ex0.wifiList;
+import ex0.wifiPoint;
+import ex0.wifiListContainer;
+//import java.util.stream.Collectors;
+//import java.util.stream.DoubleStream;
 
 public class Mac implements PointType {
 	
@@ -27,6 +34,23 @@ public class Mac implements PointType {
  * return filtered list
  */
 
+	public <T>List<T>find(List<wifiList>item,List<Object>DataSearch)
+	{
+		Condition<wifiList>conditionA=s->{
+			boolean flag=false; 
+			for (wifiPoint p:s.getPoints())
+				for(wifiPoint p1:s.getDataSearch())
+					
+					
+		}
+		
+			
+			List<wifiList> filtered=(List<wifiList>)wifiListContainer.filter(items, condition)
+		
+		
+		
+		return null;
+	}
 	@Override
 	public <T> List<T> find(List<wifiList> item) {
 		// TODO Auto-generated method stub

@@ -36,7 +36,6 @@ public class User implements PointType {
 		
 		//calc user loction
 		
-		
 		System.out.println("user class");
 		System.out.println(this.input.toString());
 

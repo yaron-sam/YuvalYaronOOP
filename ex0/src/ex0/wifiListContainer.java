@@ -31,7 +31,7 @@ import de.micromata.opengis.kml.v_2_2_0.Placemark;
  */
 public class wifiListContainer {
 
-	private List<wifiList> container;
+	 private ArrayList<wifiList> container;
 
 	/**
 	 *  Constructor empty wifiListContainer.
@@ -44,7 +44,7 @@ public class wifiListContainer {
 	 * Copy constructor wifiListContainer.
 	 * @param container wifiListContainer we wand to copy
 	 */
-	public wifiListContainer(List<wifiList> container) {
+	public wifiListContainer(ArrayList<wifiList> container) {
 		this.container = container;
 	}
 	
