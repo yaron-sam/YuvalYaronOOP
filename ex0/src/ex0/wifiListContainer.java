@@ -15,7 +15,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import de.micromata.opengis.kml.v_2_2_0.Document;
 import de.micromata.opengis.kml.v_2_2_0.Kml;
@@ -343,10 +345,15 @@ public class wifiListContainer {
 		
 //		another way to call mac interface
 		c.locationOf( new Mac("hh") );
-		ArrayList<String> list =new ArrayList<String>();
-		list.add("hello");
-		list.add("shalom");
-		list.add("shalom");
+		
+		//user testing
+		Map<String,Integer> list =new HashMap<String,Integer>();
+  
+		list.put("mac1",-50);
+		list.put("mac2",-60);
+		list.put("mac3",-10);
+
+		
 		PointType p2  = new User(list);
 		c.locationOf(p2);
 

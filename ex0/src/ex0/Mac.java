@@ -1,5 +1,7 @@
 package ex0;
-
+/**
+ * @author yaron samuel
+ */
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -37,23 +39,14 @@ public class Mac implements PointType {
 //			}); 	
 //		};					
 		
-	Condition<wifiList> conditionb = s ->{
-		boolean flag =false;
-		for (wifiPoint p:s.getPoints()) {
-								if(p.getMAC().equals(this.mac))
-									flag =true; 	
-							}
-							return flag;
-	};
-		
-		
-		Condition<wifiList> conditionc = s ->{boolean flag =false;
-							for (wifiPoint p:s.points) {
-								if(p.getMAC().equals(this.mac))
-									flag =true; 	
-							}
-							return flag;
-	};
+		Condition<wifiList> conditionc = s -> {
+			boolean flag = false;
+			for (wifiPoint p : s.points) {
+				if (p.getMAC().equals(this.mac))
+					flag = true;
+			}
+			return flag;
+		};
 		
 		
 /*		Condition<wifiList> conditiond = new Condition<wifiList>() {
