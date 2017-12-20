@@ -132,6 +132,9 @@ public class wifiList {
 	 */
 	public ArrayList<wifiPoint> getPoints() {
 		return this.points;
+		//TODO cheak if correct
+//		return new ArrayList<wifiPoint>(this.points);
+
 	}
 
 	/**

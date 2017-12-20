@@ -18,6 +18,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import de.micromata.opengis.kml.v_2_2_0.Document;
 import de.micromata.opengis.kml.v_2_2_0.Kml;
@@ -87,8 +88,8 @@ public class wifiListContainer {
 					if (j < table.length && table[j] != null) {
 						wifiline.wifiPointAdd(new wifiPoint(table[j],
 													table[j + 1],
-													Integer.parseInt(table[j + 2]) ,
-													Integer.parseInt(table[j + 3])));
+													Integer.parseInt(table[j + 3]) ,
+													Integer.parseInt(table[j + 2])));
 
 					}
 				}
@@ -223,12 +224,10 @@ public class wifiListContainer {
 	}
 
 
-	public <T> void locationOf( PointType pointtype) {
+	public void locationOf( PointType pointtype) {
 		List<Double> loc  =  new ArrayList<Double>();
 		loc = pointtype.find(this.container);
-		System.out.println(loc.toString());
 		System.out.println(loc);
-		System.out.println(Arrays.toString(loc.toArray()));
 		}
 	
 
@@ -335,26 +334,26 @@ public class wifiListContainer {
 
 
 		c.getWifilistFile(fileSName);
-		
+/*		
 		PointType p  = new Mac("yaron");
 		c.locationOf(p);
 		
 		c.createWifiListFile("testmac.csv");
-		
-
-		
 //		another way to call mac interface
-		c.locationOf( new Mac("hh") );
+		c.locationOf( new Mac("hh") );		
+
+	*/	
+//629.8955133 ver
 		
 		//user testing
-		Map<String,Integer> list =new HashMap<String,Integer>();
+		Map<String,Integer> list =new TreeMap<String,Integer>();
   
-		list.put("mac1",-50);
-		list.put("mac2",-60);
-		list.put("mac3",-10);
-
+		list.put("mac11",-50);
+		list.put("mac22",-70);
+		list.put("mac303",-90);
 		
 		PointType p2  = new User(list);
+
 		c.locationOf(p2);
 
 

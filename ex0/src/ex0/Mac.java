@@ -3,20 +3,15 @@ package ex0;
  * @author yaron samuel
  */
 import java.util.ArrayList;
-//import java.util.ArrayList;
-//import java.util.Arrays;
-//import java.util.Collection;
+import java.util.Arrays;
 import java.util.Collections;
-//import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
-
 import ex0.wifiList;
 import ex0.wifiPoint;
 import ex0.wifiListContainer;
-//import java.util.stream.Collectors;
-//import java.util.stream.DoubleStream;
+;
 
 public class Mac implements PointType {
 	
@@ -34,25 +29,9 @@ public class Mac implements PointType {
  * return filtered list
  */
 
-	public <T>List<T>find(List<wifiList>item,List<Object>DataSearch)
-	{
-		Condition<wifiList>conditionA=s->{
-			boolean flag=false; 
-			for (wifiPoint p:s.getPoints())
-				for(wifiPoint p1:s.getDataSearch())
-					
-					
-		}
-		
-			
-			List<wifiList> filtered=(List<wifiList>)wifiListContainer.filter(items, condition)
-		
-		
-		
-		return null;
-	}
+
 	@Override
-	public <T> List<T> find(List<wifiList> item) {
+	public <T> List<Double> find(List<wifiList> item) {
 		// TODO Auto-generated method stub
 
 		
@@ -126,14 +105,12 @@ public class Mac implements PointType {
 			aloc[i]=aloc[i]/totalW;
 		}
 //		ArrayList<Double> arrayList = new ArrayList<>(Arrays.asList(aloc));
-//				arrayList  = Arrays.asList(aloc);
-
-//				List<Double> list =  Arrays.asList(aloc).;
+//		arrayList  = Arrays.asList(aloc);
+//
+//		List<Double> list =  Arrays.asList(aloc);
 //		List<Double> list = new ArrayList<Double>();
 	
-//		Double[] doubleArray = ArrayUtils.toObject(durationValueArray);
-//		List<Double> list = Arrays.asList(doubleArray);
-		return (List<T>) DoubleStream.of(aloc).boxed().collect(Collectors.toList());
+		return (List<Double>) DoubleStream.of(aloc).boxed().collect(Collectors.toList());
 
 //		return (List<T>) Arrays.asList(aloc);
 	}
