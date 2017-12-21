@@ -3,13 +3,1973 @@
     <ns2:Document>
         <ns2:name>Wifi Networks</ns2:name>
         <ns2:Placemark>
-            <ns2:name>Partner-4G-1E3F</ns2:name>
-            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;28/10/2017 20:11&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;88:28:b3:8a:1e:3f&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-87&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:15:52&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
             <ns2:TimeStamp>
-                <ns2:when>2017-10-28T20:11:00Z</ns2:when>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
             </ns2:TimeStamp>
             <ns2:Point>
-                <ns2:coordinates>34.87696121,32.09048524</ns2:coordinates>
+                <ns2:coordinates>34.8109685,32.16874461</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>GUYFI</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:16:07&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c8:60:00:b1:d4:50&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-83&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;3&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.81039765,32.16828882</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Free</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:16:09&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;06:8d:db:6e:71:13&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.81029707,32.16808141</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:16:29&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80976155,32.16746622</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>MOULY MAISON</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:16:37&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:78:9e:fa:15:91&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80978436,32.16754658</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name></ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:16:41&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;06:8d:db:6e:71:be&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80978999,32.1675522</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Shaked-Guest WiFi</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:17:05&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;b0:aa:77:f1:3a:68&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80979362,32.16755364</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Free</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:17:17&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;06:8d:db:6e:71:26&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80979445,32.16755398</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Corp</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:17:29&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;0a:8d:db:6e:71:6d&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-80&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80979461,32.16755202</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Guest Neetwork MM</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:17:37&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;94:f6:65:1b:b2:28&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-81&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;5&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80979544,32.16755091</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>MOULY MAISON</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:18:17&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:78:9e:fa:15:91&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-83&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80980057,32.16755145</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>KaymeraGuest</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:18:22&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:f6:63:15:58:82&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-93&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80980159,32.16755113</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Free</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:18:37&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;06:8d:db:6e:71:c1&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80973813,32.16750025</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Guest</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:18:39&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;02:8d:db:6e:71:c1&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80965767,32.16743172</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>BARON WIFI 2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:18:43&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;60:e3:27:bf:a1:a5&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80937232,32.16723978</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>smartsell</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:18:47&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;78:e8:b6:69:2c:91&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80909138,32.16700959</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:18:49&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_7943939&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80897673,32.16691973</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Bezeq2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:18:52&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;14:ae:db:b3:7b:65&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80890046,32.16686798</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:18:59&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_7943947&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80867405,32.16683927</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Guest</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:00&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;02:8d:db:6e:71:c1&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80858578,32.1668791</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Guest</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:04&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;02:8d:db:6e:71:6d&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-83&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80808428,32.16706188</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HP-Print-b7-LaserJet 300</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:05&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;34:23:87:36:c9:b7&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80794417,32.16711356</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Bezeq2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:06&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;14:ae:db:b3:7b:65&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80780145,32.167165</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:07&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_7943947&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80765863,32.16721855</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:09&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80736423,32.16732278</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Efrat Networks MM</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:12&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;94:f6:65:5b:b2:28&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-84&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;5&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80697634,32.16746832</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>INGENEO</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:13&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;cc:b2:55:e8:4c:e6&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80685138,32.16751585</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Heifes</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:15&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;20:0c:c8:10:c8:11&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-91&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80661675,32.16759766</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:19&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80626298,32.16773843</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Annatel_3372</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:22&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;74:da:38:a9:0c:3e&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-79&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80616419,32.16779112</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>P-HOME</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:30&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;2c:5d:93:11:60:b8&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-82&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;12&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80615479,32.16780373</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>DIRECT-52-HP DeskJet 3830 series</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:37&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;94:57:a5:4d:eb:8b&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-92&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80590359,32.16794511</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>hagit_2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:40&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;6c:b0:ce:33:a4:d5&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80557036,32.16799504</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:43&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80516057,32.16805121</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>P-HOME</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:44&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;2c:5d:93:11:60:b8&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-82&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;12&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80502255,32.16806778</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>DIRECT-52-HP DeskJet 3830 series</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:45&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;94:57:a5:4d:eb:8b&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-94&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80487698,32.16808034</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Grosman_sec</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:50&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c4:a8:1d:13:61:b5&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80417714,32.16814986</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:51&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496641&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80404964,32.16816816</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>klara-012</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:52&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c4:12:f5:fd:d1:94&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.8039369,32.16818308</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Home</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:19:53&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;14:ae:db:53:0c:2d&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-83&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80383979,32.16819679</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HOT123</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:00&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c0:ac:54:f6:c5:4b&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-82&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80357613,32.1682325</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Student</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:11&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;82:2a:a8:18:13:88&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.803571,32.16822677</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HOTBOX</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:21&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;7c:03:4c:fe:ba:1b&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-84&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80343427,32.1682422</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>vue sur mer_2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:22&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;a4:2b:8c:98:db:d2&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80336196,32.16824759</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:27&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496641&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80299871,32.16825954</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>klara-012</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:28&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c4:12:f5:fd:d1:94&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80292121,32.16826436</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HOTBOX-9A33</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:31&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;fc:b4:e6:d2:9a:39&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-94&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80265279,32.16828018</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HOT123</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:32&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c0:ac:54:f6:c5:4b&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80256887,32.16828953</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HOTBOX</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:34&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;7c:03:4c:fe:ba:1b&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-84&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80238766,32.16830652</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>vue sur mer_2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:35&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;a4:2b:8c:98:db:d2&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80229988,32.16831806</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>MEIR_2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:37&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;a0:4f:d4:2c:5e:11&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-95&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80211096,32.16833495</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:39&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496641&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80192153,32.16835232</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HOTBOX-E00E</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:41&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:78:9e:fb:24:26&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80172666,32.16837414</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HOTBOX-9A33</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:42&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;fc:b4:e6:d2:9a:39&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-94&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80162958,32.16838391</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>anna2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:43&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;a0:ab:1b:62:76:ac&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-93&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80153149,32.16839075</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>BezeqFree</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:45&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;6a:12:f5:84:50:41&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;8&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80133696,32.16841289</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>vue sur mer_2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:20:46&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;a4:2b:8c:98:db:d2&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80124529,32.16842191</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:23:54&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496643&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80141799,32.16794625</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Shohat01</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:24:02&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;7c:b7:33:ea:b3:b4&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-83&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80221896,32.16785479</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:24:04&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496643&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.8024285,32.16783277</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Student</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:24:07&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;46:d9:e7:fe:83:ad&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-91&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80267393,32.16780051</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>gella555</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:24:14&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:22:b0:75:7d:eb&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-93&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80285201,32.16778501</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>anna2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:24:25&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;a0:ab:1b:62:76:ac&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-91&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80284709,32.16778529</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Yafim</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:24:37&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;14:ae:db:32:13:d2&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;5&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80284851,32.16778513</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>klara-012</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:24:49&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c4:12:f5:fd:d1:94&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80294343,32.16777303</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>wingate</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:24:52&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;70:3a:cb:5f:4f:25&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-83&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80309845,32.16775583</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:00&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496641&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80341606,32.16804761</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>elneuron</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:01&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;e8:fc:af:92:b9:87&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.8034694,32.168087</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>hagit_2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:04&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;6c:b0:ce:33:a4:d5&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-83&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.8037292,32.16811782</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>klara-012</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:06&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c4:12:f5:fd:d1:94&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-82&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.8039691,32.16810512</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>wingate</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:07&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;70:3a:cb:5f:4f:25&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-83&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80410766,32.16809297</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:10&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496641&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80457098,32.16804439</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>klara-012</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:13&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c4:12:f5:fd:d1:94&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-82&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80503635,32.1679946</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>TP-LINK_UKTVWATCH</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:14&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;50:c7:bf:18:9a:de&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-92&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;8&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80517537,32.16797618</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Grosman_sec</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:15&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c4:a8:1d:13:61:b5&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80529349,32.1679599</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:20&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496641&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80569708,32.16784934</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>DIRECT-17-HP DeskJet 3830 series</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:21&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;94:57:a5:4a:f4:89&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-94&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80574401,32.16782606</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Annatel_3372</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:30&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;74:da:38:a9:0c:3e&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-78&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80609552,32.16795669</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:35&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80619976,32.16844746</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Heifes</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:37&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;20:0c:c8:10:c8:11&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-91&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80625201,32.16864207</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Annatel_3372</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:40&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;74:da:38:a9:0c:3e&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-78&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80632909,32.16898761</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:45&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80645278,32.16949692</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Heifes</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:47&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;20:0c:c8:10:c8:11&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-91&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80651822,32.16970805</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>YamNadlan</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:49&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;34:8a:ae:ff:c0:96&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-73&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80660114,32.1699381</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Annatel_3372</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:51&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;74:da:38:a9:0c:3e&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-78&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80669356,32.17016745</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>GuestHome</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:52&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;e4:6f:13:47:e4:21&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80674085,32.17027133</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:55&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80687629,32.17054806</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HP-Print-45-Officejet Pro 6830</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:25:57&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;70:5a:0f:67:88:45&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80696162,32.17073974</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>upstairs</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:26:00&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;d4:6e:0e:cf:bc:ca&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-93&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80707854,32.17101312</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Melinek</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:26:02&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;14:ae:db:45:27:5d&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80715901,32.17119752</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>GuestHome</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:26:03&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;e4:6f:13:47:e4:21&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80720227,32.1713014</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:26:06&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80734237,32.1716222</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:26:07&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_7943940&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80738335,32.1717147</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>DIRECT-FC-HP OfficeJet Pro 8720</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:26:09&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;ec:8e:b5:05:97:a5&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80746199,32.17188914</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>upstairs</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:26:11&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;d4:6e:0e:cf:bc:ca&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-93&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80753776,32.17207231</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>varda</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:27:47&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c4:12:f5:85:27:c2&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-91&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.81077836,32.1693635</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>stephane</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:27:48&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:24:2b:cf:13:21&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.81073625,32.1692516</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>kaymeraQA</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:27:51&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:f6:63:15:58:80&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.81061436,32.16893698</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HP-Setup&gt;75-M277 LaserJet</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:27:52&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;92:cd:b6:2b:e9:75&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.81057229,32.16883694</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:27:54&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_7943940&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.81048708,32.16863027</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>devolo-0f4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:27:58&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;30:d3:2d:37:20:f4&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.81032406,32.16822321</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>terry_ap</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:28:01&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;5c:83:8f:33:bd:68&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.81018513,32.16795035</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>kaymeraQA</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:28:02&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:f6:63:15:58:80&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.81013471,32.16787145</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:28:05&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80997915,32.16770216</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>CEO-WiFi_2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:28:07&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c4:12:f5:80:24:0b&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-82&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80992879,32.1676567</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Free</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:28:13&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;06:8d:db:6e:71:6d&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80992391,32.16758705</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>CArgentina</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:35:33&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;30:b5:c2:bd:55:32&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-91&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80986899,32.16761004</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>lavel-2</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:35:43&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;74:da:38:ae:91:7b&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-81&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80949456,32.16732018</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Corp</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:35:48&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;0a:8d:db:6e:71:bf&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80915226,32.16707617</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>DIRECT-a8-HP M477 LaserJet</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:35:49&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;aa:6b:ad:04:c6:a8&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80909463,32.16702704</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:35:53&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80894877,32.16691159</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Corp</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:35:54&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;0a:8d:db:6e:71:6d&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80892214,32.16689111</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>BlueSnap-Guest-2.4GHz</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:35:58&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:02:6f:bb:fd:ac&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-80&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80887986,32.16685904</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>BlueSnap-Guest-2.4GHz</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:05&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c0:56:27:a0:6c:9a&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-87&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;3&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80875457,32.16682356</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HOTFiber-2017</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:07&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;18:1e:78:86:00:63&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80863658,32.16685938</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>brieftrace</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:09&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;90:8d:78:51:52:fc&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;12&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80848464,32.16691556</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name></ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:13&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;fa:8f:ca:93:a5:64&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-78&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80810497,32.16706128</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:15&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_7943939&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80787192,32.16714559</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>BlueSnap-Guest-2.4GHz</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:16&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c0:56:27:a0:6c:9a&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-87&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;3&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80775152,32.16718852</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:17&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80762377,32.16723596</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>brieftrace</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:19&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;90:8d:78:51:52:fc&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;12&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80737383,32.16732663</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name></ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:22&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;fa:8f:ca:93:a5:64&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-78&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80698572,32.16747233</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Heifes</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:25&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;20:0c:c8:10:c8:11&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-92&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80663726,32.16759479</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:26&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80654255,32.16762994</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>wifi in car-1794</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:28&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;08:97:58:33:b7:cc&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-80&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80636139,32.16769385</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Annatel_3372</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:35&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;74:da:38:a9:0c:3e&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-78&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;2&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80608258,32.16784543</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Avi_PR_2.4G</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:38&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;ec:08:6b:38:12:0c&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;12&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80595075,32.16792572</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Home</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:43&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;14:ae:db:53:0c:2d&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-87&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80585945,32.16775377</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Bezeq Free D02536</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:45&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;72:0c:c8:10:c8:12&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-93&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80598605,32.16771032</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Annatel_3372.5</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:46&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;74:da:38:a9:0c:43&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;44&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80607047,32.16769534</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Bezeq Free D02536</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:48&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;72:0c:c8:10:c8:12&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80624023,32.16765512</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Casa1</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:55&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;f4:6b:ef:e2:2c:1f&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-96&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80680415,32.16747453</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Home</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:56&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;14:ae:db:53:0c:2d&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-87&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80689796,32.16744517</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>shor_Ext</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:57&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;e2:91:f5:b6:ec:a8&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80699792,32.1674137</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Barda</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:36:58&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:78:9e:fa:dc:f4&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80710102,32.16737717</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Bezeq Free D02536</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:01&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;72:0c:c8:10:c8:12&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80739771,32.16726438</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:05&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80775057,32.16713504</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Ester_wifi</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:07&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;84:26:15:eb:2d:b3&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-92&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80791409,32.16707845</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Avi_PR_2.4G</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:09&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;ec:08:6b:38:12:0c&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;12&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80806014,32.16702393</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Barda</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:10&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:78:9e:fa:dc:f4&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80813818,32.16699571</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Candan</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:15&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c0:ff:d4:7b:82:30&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80843574,32.16688707</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>wifi in car-1794</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:27&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;08:97:58:33:b7:cc&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-82&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80870653,32.16675165</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:29&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80876764,32.16667554</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Hacker-Ap</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:34&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;e8:de:27:bc:8f:2e&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80863316,32.16633389</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>BlueSnap-Guest-2.4GHz</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:36&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c0:56:27:a0:6c:9a&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;3&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80848806,32.16617675</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:37&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_7943939&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80840541,32.16609074</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>iFOREX</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:38&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;f8:d1:11:b1:92:93&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;13&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80832493,32.16601289</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Guest Neetwork MM</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:40&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;94:f6:65:1b:b2:28&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;5&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80817037,32.16585329</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>wifi in car-1794</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:42&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;08:97:58:33:b7:cc&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-82&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80802655,32.16570195</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>MVwireless</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:44&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;4a:d9:e7:59:4a:f2&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-91&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80787312,32.16555062</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Hacker-Ap</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:47&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;e8:de:27:bc:8f:2e&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80763223,32.16529781</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:49&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_99841&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80747327,32.1651241</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>BlueSnap-Guest-2.4GHz</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:50&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:02:6f:bb:fd:ac&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-84&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80739189,32.16503358</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Glilot1</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:54&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;70:4c:a5:13:f2:f5&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-87&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;9&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80705949,32.16465426</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:55&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_99842&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80698912,32.16455381</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>MVwireless</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:56&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;4a:d9:e7:59:4a:f2&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-91&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80692798,32.16444832</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Hacker-Ap</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:37:58&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;e8:de:27:bc:8f:2e&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80681882,32.16424028</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>DIRECT-45-HP DeskJet 4670 series</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:38:00&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;b0:5a:da:5f:44:4a&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80670363,32.1640309</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>drupe 2.4G</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:38:04&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;ec:08:6b:27:b0:2f&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;4&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80647913,32.16364117</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:38:06&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_99842&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80640188,32.16348677</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>MVwireless</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:38:07&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;4a:d9:e7:59:4a:f2&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-91&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80637038,32.16342031</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>DIRECT-F7-HP DeskJet 4670 series</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:38:08&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;b0:5a:da:fa:39:f8&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-86&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80634707,32.16336032</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>S&amp;W</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:38:14&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;82:2a:a8:b5:ab:cd&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80629334,32.16325281</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Crestron_23</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:38:19&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;10:fe:ed:62:9e:1a&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-81&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;4&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80629235,32.16325323</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Wallashops-Guest</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:38:25&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:c8:8b:28:28:21&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-92&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80628582,32.16325827</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>JONEY_2.4</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:38:34&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;6c:b0:ce:3a:83:4e&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-91&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80628454,32.16326247</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:38:39&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_8652802&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80627809,32.16326514</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Wallashops-Office</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:38:49&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:c8:8b:28:28:20&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-94&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80626799,32.16325342</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>DELEK-GUEST</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:39:01&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c0:25:5c:df:62:e1&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-73&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;5&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80626363,32.16324212</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>BEZEQ_SNW</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:39:04&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c4:12:f5:f5:b9:96&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;11&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80625805,32.16324055</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>DELEK-GUEST</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:39:13&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;34:db:fd:0a:6b:61&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80622228,32.16308615</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Biopharmax Guest</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:39:19&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;18:e7:28:50:04:78&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-82&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80662576,32.16287499</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:42:54&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_7943947&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.81042983,32.1661395</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>DIRECT-VsWorkCentre 3335</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:42:57&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;9e:93:4e:78:d6:3e&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.81008702,32.16627513</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>bi-lilly</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:43:02&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;68:86:a7:53:76:14&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-93&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.8095758,32.16650275</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:43:04&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_7943947&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80942216,32.16656924</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Guest</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:43:07&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;02:8d:db:6e:71:ad&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-92&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80926224,32.1666435</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name></ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:43:17&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;02:1d:aa:7c:bb:64&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;13&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80922217,32.16666901</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Azrieli_Wifi</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:43:19&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;00:1d:aa:7e:bb:64&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-87&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;13&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80922272,32.16666491</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Guest Neetwork MM</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:43:34&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;94:f6:65:1b:b2:28&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-94&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;5&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80922581,32.16665337</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Ezbob_Guest</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:43:37&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;0a:8d:db:65:89:a9&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-94&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80921527,32.16664966</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HOTFiber-2017</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:43:47&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;08:6a:0a:37:66:66&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-82&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80863087,32.16690218</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:43:49&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_7943947&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80840565,32.16699555</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Ezbob_Guest</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:43:52&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;0a:8d:db:65:89:a9&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-94&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80810636,32.16712538</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Bond-MidFloor</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:43:57&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;30:b5:c2:25:dc:ae&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-91&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;4&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80800803,32.16737893</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:44:01&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80821465,32.16769966</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>HOTFiber-2017</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:44:03&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;18:1e:78:86:00:63&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-81&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.8082695,32.16789734</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Candan</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:44:04&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c0:ff:d4:7b:82:30&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-90&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80829078,32.16798621</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name></ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:44:05&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;fa:8f:ca:93:a5:64&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;6&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80830951,32.16806283</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>franko</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:44:07&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;10:be:f5:3c:2d:52&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.8083581,32.16813242</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Home.</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:44:08&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;a0:ab:1b:62:a7:bc&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-89&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80838993,32.16813788</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Candan</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:44:17&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;c0:ff:d4:7b:82:30&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-85&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80916947,32.16798421</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Partner</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:44:18&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;42501_13111_496642&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-113&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;0&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80927518,32.16796452</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>franko</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:44:19&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;10:be:f5:3c:2d:52&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.8093861,32.16794452</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>Guest Neetwork MM</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:44:27&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;94:f6:65:1b:b2:28&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;5&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80992088,32.16781071</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Corp</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:44:28&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;0a:8d:db:6e:71:6d&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-88&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80993062,32.16779976</ns2:coordinates>
+            </ns2:Point>
+        </ns2:Placemark>
+        <ns2:Placemark>
+            <ns2:name>888Corp</ns2:name>
+            <ns2:description>id: &lt;b&gt;ONEPLUS A3003_28_171012&lt;/b&gt;&lt;br/&gt;date: &lt;b&gt;2017-10-27 16:44:34&lt;/b&gt;&lt;br/&gt;MAC: &lt;b&gt;0a:8d:db:6e:71:6d&lt;/b&gt;&lt;br/&gt;Channel: &lt;b&gt;-76&lt;/b&gt;&lt;br/&gt;signal: &lt;b&gt;1&lt;/b&gt;</ns2:description>
+            <ns2:TimeStamp>
+                <ns2:when>2017-11-27T18:34:36Z</ns2:when>
+            </ns2:TimeStamp>
+            <ns2:Point>
+                <ns2:coordinates>34.80992134,32.16768159</ns2:coordinates>
             </ns2:Point>
         </ns2:Placemark>
     </ns2:Document>
