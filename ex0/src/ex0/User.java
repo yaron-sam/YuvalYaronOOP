@@ -20,7 +20,7 @@ public class User implements PointType {
 	 final static int no_signal=-120;
 	 final static int diff_no_sig=100;
 
-	//list is like: [String mac1,int signal1, mac2
+	//list is like: [String mac1,int signal1, mac2,signal 2, mac 3 signal3]
 	private Map<String,Integer> input; //input
 		
 /**
@@ -37,7 +37,9 @@ public class User implements PointType {
 	@Override
 	public <T> List<Double> find(List<wifiList> item) {
 		
-		//filter item to contain row with all mac's (at lost 2)
+		/*filter item to contain row with all mac's (at lost 2).
+		 * we dont get estimated loction base on one mac. 
+		 */
 		Condition<wifiList> condition = s -> {
 			int c = 0;
 			for (wifiPoint p : s.points) {
@@ -68,8 +70,10 @@ public class User implements PointType {
 			List<String> inputMac = new ArrayList<String>(input.keySet());
 
 			inputMac.removeAll(filteredMac);
-			if (!inputMac.isEmpty())
+			while (!inputMac.isEmpty()) {
 				list.points.add(new wifiPoint("untrue point", inputMac.get(0), no_signal, 0));
+				inputMac.remove(0);
+			}
 		}
 		//sort each wifilist to be in alpha beta order.
 		filtered.forEach((list) -> list.points.sort((a,b)->a.getMAC().compareTo(b.getMAC())));
@@ -126,8 +130,8 @@ public class User implements PointType {
 	 * @return weight to wifilist
 	 */
 	private double weightCalc(wifiList l) {
-		int[] dif = new int[3];
-		double[] w = new double[3];
+		int[] dif = new int[input.size()];
+		double[] w = new double[input.size()];
 		int i=0;
 		for (wifiPoint p : l.getPoints()) {
 			if(p.getSignal() ==no_signal)

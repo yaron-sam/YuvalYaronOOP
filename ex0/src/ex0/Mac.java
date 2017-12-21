@@ -64,7 +64,7 @@ public class Mac implements PointType {
 		};*/
 	
 		//filter to row in continer with our mac adress. 
-		List<wifiList> filtered = (List<wifiList>) wifiListContainer.filter(item, conditionc);
+		List<wifiList> filtered =  (List<wifiList>) wifiListContainer.filter(item, conditionc);
 		
 		/*for(wifiList l:filtered) {
 			l.points.removeIf(s->!s.MAC.equals(mac) );
@@ -83,7 +83,7 @@ public class Mac implements PointType {
 	            if (o2 == null) {
 	                return -1;
 	            }
-			return o2.points.get(0).getChannel()-o1.points.get(0).getChannel();
+			return o2.points.get(0).getSignal()-o1.points.get(0).getSignal();
 		});
 		
 		double aloc[] = new double[3];
@@ -92,7 +92,7 @@ public class Mac implements PointType {
 		
 		//calc weight
 		for (int i = 0; i < w.length && i<filtered.size(); i++) {
-			w[i]=1/Math.pow((double) filtered.get(i).points.get(0).getChannel(),2);
+			w[i]=1/Math.pow((double) filtered.get(i).points.get(0).getSignal(),2);
 			totalW+=w[i];
 		}
 		//calc average of loction

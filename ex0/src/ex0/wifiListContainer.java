@@ -16,6 +16,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -32,8 +33,10 @@ import de.micromata.opengis.kml.v_2_2_0.Placemark;
  */
 public class wifiListContainer {
 
-	 private ArrayList<wifiList> container;
+	 private List<wifiList> container;
+	 private Map<String,List<Double>> map;
 
+	 
 	/**
 	 *  Constructor empty wifiListContainer.
 	 */
@@ -43,10 +46,10 @@ public class wifiListContainer {
 	
 		/**
 	 * Copy constructor wifiListContainer.
-	 * @param container wifiListContainer we wand to copy
+	 * @param item wifiListContainer we wand to copy
 	 */
-	public wifiListContainer(ArrayList<wifiList> container) {
-		this.container = container;
+	public wifiListContainer(List<wifiList> item) {
+		this.container = item;
 	}
 	
 	/**
@@ -94,6 +97,7 @@ public class wifiListContainer {
 					}
 				}
 				this.container.add(wifiline);
+				
 
 			}
 
@@ -180,54 +184,59 @@ public class wifiListContainer {
 			e.printStackTrace();
 		}
 	}
-//	/**
-//	 * Filter wifiList according to groupId 
-//	 * @param users
-//	 */
-//	public void filterByIdrgroup( List<String> users) {
-//		Condition<wifiList> group = new findGroupId(users);
-//		this.container = (List<wifiList>)  filter(this.container, group);
-//	}
-//	/**
-//	 * Filter wifiList according to location
-//	 * @param lat latitude
-//	 * @param lon longitude
-//	 */
-//	public void filterByLoc( double lat, double lon) {
-////		Condition<wifiList> condition = s -> s.lat == lat && s.lon == lon;
-//		Condition<wifiList> condition = new findLoction(lat, lon);
-//		System.out.println(condition);
-//		this.container = (List<wifiList>) filter(this.container, condition);
-//	}
-//	/**
-//	 * Filter wifiList according to date
-//	 * @param date
-//	 */
-//	public void filterByDate( String date) {
-//		Condition<wifiList> condition = s -> s.getDate().equals(date);
-//		this.container = (List<wifiList>) filter(this.container, condition);
-//	}
+	
+	//TODO change the loction of all the filterd
+	/**
+	 * Filter wifiList according to groupId 
+	 * @param users
+	 */
+	public void filterByIdrgroup( List<String> users) {
+		Condition<wifiList> group = new findGroupId(users);
+		this.container = (ArrayList<wifiList>)  filter(this.container, group);
+	}
+	/**
+	 * Filter wifiList according to location
+	 * @param lat latitude
+	 * @param lon longitude
+	 */
+	public void filterByLoc( double lat, double lon) {
+//		Condition<wifiList> condition = s -> s.lat == lat && s.lon == lon;
+		Condition<wifiList> condition = new findLoction(lat, lon);
+		System.out.println(condition);
+		this.container = (ArrayList<wifiList>) filter(this.container, condition);
+	}
+	/**
+	 * Filter wifiList according to date
+	 * @param date
+	 */
+	public void filterByDate( String date) {
+		Condition<wifiList> condition = s -> s.getDate().equals(date);
+		this.container = (ArrayList<wifiList>) filter(this.container, condition);
+	}
 	/**
 	 * General filter (abstract filter)
 	 * @param items
 	 * @param condition
 	 * @return new list after filtering
 	 */
-	static <T> Collection<T> filter(Collection<T> items, Condition<T> condition) {
-		Collection<T> output = new ArrayList<T>(); // initialize empty list
-		for (T item : items) {
+	static <T> List<wifiList> filter(Collection<wifiList> items, Condition<T> condition) {
+		List<wifiList> output = new ArrayList<wifiList>(); // initialize empty list
+		for (wifiList item : items) {
 			if (condition.test(item)) {
 				output.add(item);
+//				output.add(new wifiList(item));
+
 			}
 		}
 		return output;
 	}
 
 
-	public void locationOf( PointType pointtype) {
+	public List<Double> locationOf( PointType pointtype) {
 		List<Double> loc  =  new ArrayList<Double>();
 		loc = pointtype.find(this.container);
 		System.out.println(loc);
+		return loc;
 		}
 	
 
@@ -323,39 +332,100 @@ public class wifiListContainer {
 		System.out.println("create kml file: " + filename);
 
 	}
+	
+	void generateMaclocFile(String file_name) {
+		map=new TreeMap<String,List<Double>>();
+		List<wifiList> copy = new ArrayList<wifiList>(this.container); //This does a shallow copy
+
+
+//		for (wifiList sample : container) {
+//			System.out.println(sample.getPoints().size());
+//			System.out.println(sample.points.size());
+//		}
+//		System.out.println("*********************");
+		for (wifiList sample : copy) {
+//			System.out.println(sample.getPoints().size());
+			for (wifiPoint p : sample.getPoints()) {
+//				System.out.println(p.getMAC());
+				if (!map.containsKey(p.getMAC()))
+					map.put(p.getMAC(), locationOf(new Mac(p.getMAC())));
+			}
+		}
+		System.out.println("number of diffrent mac: " + map.size());
+		try {
+			PrintWriter pw = new PrintWriter(file_name);
+			StringBuilder sb = new StringBuilder();
+			sb.append("Mac adrees,Lat,Lon,Alt\n");
+			map.forEach((mac,a) ->{
+				sb.append(mac+","+a.get(0)+","+a.get(1)+","+a.get(2)+"\n");
+				}
+			);
+			pw.print(sb);
+			pw.close();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println("create mac loction file: "+file_name);
+	}
+
+    void generateUserlocFile (String file_name) {
+   	 
+    }	
+    
 
 	public static void main(String[] args) {
 		wifiListContainer c  = new wifiListContainer();
 		
-		String fileSName="testwifilist.csv";
+		String inputfileSName="testwifilist.csv";
+//		String inputfileSName="input_BM2.csv";
+//		String inputfileSName="input_BM2.csv";
+
 
 		// take csv file that we just creat and convert him to new wifi list.
 		
+	
+		c.getWifilistFile(inputfileSName);
+		
+		c.generateMaclocFile("macLoctionBm2.csv");
+		
+		
+		Map<String,Integer> list =new TreeMap<String,Integer>();
 
+		list.put("mac10",-50);
+		list.put("mac20",-70);
+		list.put("mac30",-90);
+//		list.put("ec:8c:a2:26:d3:68",-73);
+//		list.put("24:c9:a1:35:a5:e8",-89);
+//		list.put("1c:b9:c4:16:05:38",-90);
+		PointType p2  = new User(list);
 
-		c.getWifilistFile(fileSName);
-/*		
+		c.locationOf(p2);
+		/*	
+	 * 
+	 * 
 		PointType p  = new Mac("yaron");
 		c.locationOf(p);
 		
-		c.createWifiListFile("testmac.csv");
 //		another way to call mac interface
 		c.locationOf( new Mac("hh") );		
 
-	*/	
+		
 //629.8955133 ver
 		
 		//user testing
 		Map<String,Integer> list =new TreeMap<String,Integer>();
   
-		list.put("mac11",-50);
-		list.put("mac22",-70);
-		list.put("mac303",-90);
-		
+		list.put("mac1",-50);
+		list.put("mac2",-70);
+		list.put("mac3",-70);
+		list.put("mac4",-60);
+		list.put("mac5",-40);
+		list.put("mac6",-10);
 		PointType p2  = new User(list);
 
 		c.locationOf(p2);
-
+*/
 
 	}
 

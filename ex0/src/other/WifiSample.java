@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ex0;
+package other;
 
 /**
  * @author Yuval_Gabso

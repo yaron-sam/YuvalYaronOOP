@@ -25,6 +25,7 @@ class wifiListContainerTest {
 	@Before
 	void setUp() throws Exception {
 	}
+	@Test
 	public void testFindGroupId()
 	{
 		ArrayList<wifiPoint> p = new ArrayList<wifiPoint>();

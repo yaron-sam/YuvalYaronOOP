@@ -21,6 +21,14 @@ public class wifiPoint {
 		this.Signal =Signal;
 		this.Channel =Channel;
 	}
+	
+	
+	public wifiPoint(wifiPoint p) {
+		this.SSID = p.SSID;
+		this.MAC =p.MAC;
+		this.Signal =p.Signal;
+		this.Channel =p.Channel;
+	}
 	/**
 	 * Print SSID, MAC, Signal and channel from wifiPoint
 	 */
@@ -55,6 +63,38 @@ public class wifiPoint {
 	 */
 	public int getChannel() {
 		return Channel;
+	}
+
+
+
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		wifiPoint other = (wifiPoint) obj;
+		if (Channel != other.Channel)
+			return false;
+		if (MAC == null) {
+			if (other.MAC != null)
+				return false;
+		} else if (!MAC.equals(other.MAC))
+			return false;
+		if (SSID == null) {
+			if (other.SSID != null)
+				return false;
+		} else if (!SSID.equals(other.SSID))
+			return false;
+		if (Signal != other.Signal)
+			return false;
+		return true;
 	}
 	
 	

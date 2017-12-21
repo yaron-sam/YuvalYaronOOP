@@ -5,7 +5,14 @@ package ex0;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
+/**
+ * wifilist contain sample's data about name loction and time and until 10 most strong wifi network (wifipoint) that
+ * Receive in the sample.  
+ *
+ */
 public class wifiList {
 	
 	/**
@@ -18,7 +25,7 @@ public class wifiList {
 	private double lat;
 	private double lon;
 	private double alt;
-	public ArrayList<wifiPoint> points;
+	public List<wifiPoint> points;
 /**
  * Constructor wifiList (with all variable)
  * @param id
@@ -57,6 +64,17 @@ public class wifiList {
 		this.alt=alt;
 		this.points=new ArrayList<wifiPoint>();   
 	}
+	
+	public wifiList(wifiList w) {
+		this.id = w.id;
+		this.date = w.date;
+		this.time=w.time;
+		this.lat=w.lat;
+		this.lon=w.lon;
+		this.alt=w.alt;
+		this.points=w.getPoints();
+	}
+	
 	
 	/**
 	 * Function that add wifiPoint p to  wifilist.
@@ -130,11 +148,18 @@ public class wifiList {
 	/**
 	 * @return the points
 	 */
-	public ArrayList<wifiPoint> getPoints() {
+	public List<wifiPoint> getPoints() {
+//		List<wifiPoint> newlist = new ArrayList<wifiPoint>(this.points.size());
+//		for (wifiPoint p : this.points) {
+//			newlist.add(new wifiPoint(p));
+//		}
+//		return newlist;
+//		return this.points.stream().map(wifiPoint::new).collect(Collectors.toList());
+	
+//		List<wifiPoint> copy = new ArrayList<wifiPoint>(this.points);
+//		return copy;
 		return this.points;
-		//TODO cheak if correct
-//		return new ArrayList<wifiPoint>(this.points);
-
+		
 	}
 
 	/**
@@ -144,4 +169,26 @@ public class wifiList {
 		this.points = points;
 	}
 
+	public static void main(String[] args) {
+		ArrayList<wifiPoint> p = new ArrayList<wifiPoint>();
+		p.add(new wifiPoint("ab", "1", 1, 2));
+		p.add(new wifiPoint("ab", "2", 1, 2));
+		p.add(new wifiPoint("ab", "3", 1, 2));
+		p.add(new wifiPoint("ab", "4", 1, 2));
+		wifiList l = new wifiList("NRD90M.1928188_904.2811", "27/10/2017", "16:16:45", 32.16766122, 34.80988156,
+				39.01806582, p);
+
+		List<wifiPoint> newp = l.getPoints();
+		l.points.remove(2);
+		System.out.println(l.points);
+		System.out.println(newp);
+		
+		System.out.println(l.points.get(0)+"vs "+newp.get(0)+" is: " +(l.points.get(0)==newp.get(0)));
+		System.out.println(l.points.get(0)+"vs "+newp.get(0)+" is: " +l.points.get(0).equals(newp.get(0)));
+		
+		wifiList newl = new wifiList(l);
+		l.time ="change";
+		l.points.add(new wifiPoint("new", "5", 1, 2));
+		
+	}
 }
