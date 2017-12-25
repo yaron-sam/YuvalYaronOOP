@@ -223,8 +223,8 @@ public class wifiListContainer {
 		List<wifiList> output = new ArrayList<wifiList>(); // initialize empty list
 		for (wifiList item : items) {
 			if (condition.test(item)) {
-				output.add(item);
-//				output.add(new wifiList(item));
+//				output.add(item);
+				output.add(new wifiList(item));
 
 			}
 		}
@@ -235,7 +235,7 @@ public class wifiListContainer {
 	public List<Double> locationOf( PointType pointtype) {
 		List<Double> loc  =  new ArrayList<Double>();
 		loc = pointtype.find(this.container);
-		System.out.println(loc);
+//		System.out.println(loc);
 		return loc;
 		}
 	
@@ -338,10 +338,10 @@ public class wifiListContainer {
 		List<wifiList> copy = new ArrayList<wifiList>(this.container); //This does a shallow copy
 
 
-//		for (wifiList sample : container) {
-//			System.out.println(sample.getPoints().size());
+		for (wifiList sample : container) {
+			System.out.println(sample.getPoints().size());
 //			System.out.println(sample.points.size());
-//		}
+		}
 //		System.out.println("*********************");
 		for (wifiList sample : copy) {
 //			System.out.println(sample.getPoints().size());
@@ -377,8 +377,8 @@ public class wifiListContainer {
 	public static void main(String[] args) {
 		wifiListContainer c  = new wifiListContainer();
 		
-		String inputfileSName="testwifilist.csv";
-//		String inputfileSName="input_BM2.csv";
+//		String inputfileSName="testwifilist.csv";
+		String inputfileSName="input_BM2.csv";
 //		String inputfileSName="input_BM2.csv";
 
 

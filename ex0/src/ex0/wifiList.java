@@ -25,7 +25,7 @@ public class wifiList {
 	private double lat;
 	private double lon;
 	private double alt;
-	public List<wifiPoint> points;
+	List<wifiPoint> points;
 /**
  * Constructor wifiList (with all variable)
  * @param id
@@ -72,7 +72,7 @@ public class wifiList {
 		this.lat=w.lat;
 		this.lon=w.lon;
 		this.alt=w.alt;
-		this.points=w.getPoints();
+		this.points= w.points.stream().map(wifiPoint::new).collect(Collectors.toList());
 	}
 	
 	
@@ -177,6 +177,9 @@ public class wifiList {
 		p.add(new wifiPoint("ab", "4", 1, 2));
 		wifiList l = new wifiList("NRD90M.1928188_904.2811", "27/10/2017", "16:16:45", 32.16766122, 34.80988156,
 				39.01806582, p);
+		wifiList lewp =  new wifiList(l);
+		System.out.println(l.equals(lewp));
+		System.out.println(l==lewp);
 
 		List<wifiPoint> newp = l.getPoints();
 		l.points.remove(2);
