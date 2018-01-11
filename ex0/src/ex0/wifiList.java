@@ -169,29 +169,68 @@ public class wifiList {
 		this.points = points;
 	}
 
-	public static void main(String[] args) {
-		ArrayList<wifiPoint> p = new ArrayList<wifiPoint>();
-		p.add(new wifiPoint("ab", "1", 1, 2));
-		p.add(new wifiPoint("ab", "2", 1, 2));
-		p.add(new wifiPoint("ab", "3", 1, 2));
-		p.add(new wifiPoint("ab", "4", 1, 2));
-		wifiList l = new wifiList("NRD90M.1928188_904.2811", "27/10/2017", "16:16:45", 32.16766122, 34.80988156,
-				39.01806582, p);
-		wifiList lewp =  new wifiList(l);
-		System.out.println(l.equals(lewp));
-		System.out.println(l==lewp);
-
-		List<wifiPoint> newp = l.getPoints();
-		l.points.remove(2);
-		System.out.println(l.points);
-		System.out.println(newp);
+	
+	/**
+	 * check if position and time are equals. (used for marge same  id time loction list) 
+	 * @param other wifiList 
+	 * @return
+	 */
+	public boolean compare(wifiList other) {
 		
-		System.out.println(l.points.get(0)+"vs "+newp.get(0)+" is: " +(l.points.get(0)==newp.get(0)));
-		System.out.println(l.points.get(0)+"vs "+newp.get(0)+" is: " +l.points.get(0).equals(newp.get(0)));
-		
-		wifiList newl = new wifiList(l);
-		l.time ="change";
-		l.points.add(new wifiPoint("new", "5", 1, 2));
-		
+		if (Double.doubleToLongBits(alt) != Double.doubleToLongBits(other.alt))
+			return false;
+		if (date == null) {
+			if (other.date != null)
+				return false;
+		} else if (!date.equals(other.date))
+			return false;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		if (Double.doubleToLongBits(lat) != Double.doubleToLongBits(other.lat))
+			return false;
+		if (Double.doubleToLongBits(lon) != Double.doubleToLongBits(other.lon))
+			return false;
+		if (time == null) {
+			if (other.time != null)
+				return false;
+		} else if (!time.equals(other.time))
+			return false;
+		return true;
 	}
+
+	public void merge(List<wifiPoint> points) {
+		for (int i = 0; i < points.size(); i++){	
+			this.wifiPointAdd(points.get(i));
+		}		
+	}
+	
+
+//	public static void main(String[] args) {
+//		ArrayList<wifiPoint> p = new ArrayList<wifiPoint>();
+//		p.add(new wifiPoint("ab", "1", 1, 2));
+//		p.add(new wifiPoint("ab", "2", 1, 2));
+//		p.add(new wifiPoint("ab", "3", 1, 2));
+//		p.add(new wifiPoint("ab", "4", 1, 2));
+//		wifiList l = new wifiList("NRD90M.1928188_904.2811", "27/10/2017", "16:16:45", 32.16766122, 34.80988156,
+//				39.01806582, p);
+//		wifiList lewp =  new wifiList(l);
+//		System.out.println(l.equals(lewp));
+//		System.out.println(l==lewp);
+//
+//		List<wifiPoint> newp = l.getPoints();
+//		l.points.remove(2);
+//		System.out.println(l.points);
+//		System.out.println(newp);
+//		
+//		System.out.println(l.points.get(0)+"vs "+newp.get(0)+" is: " +(l.points.get(0)==newp.get(0)));
+//		System.out.println(l.points.get(0)+"vs "+newp.get(0)+" is: " +l.points.get(0).equals(newp.get(0)));
+//		
+//		wifiList newl = new wifiList(l);
+//		l.time ="change";
+//		l.points.add(new wifiPoint("new", "5", 1, 2));
+//		
+//	}
 }

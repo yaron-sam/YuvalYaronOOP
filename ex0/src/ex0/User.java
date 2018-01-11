@@ -10,6 +10,8 @@ import java.util.TreeMap;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 
+import Filters.Condition;
+
 
 public class User implements PointType {
 	 static final int Nrow =3;

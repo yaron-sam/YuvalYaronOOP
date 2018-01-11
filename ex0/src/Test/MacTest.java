@@ -12,7 +12,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ex0.Condition;
+import Filters.Condition;
 import ex0.wifiList;
 import ex0.wifiPoint;
 

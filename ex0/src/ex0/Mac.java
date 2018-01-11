@@ -8,6 +8,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
+
+import Filters.Condition;
 import ex0.wifiList;
 import ex0.wifiPoint;
 import ex0.wifiListContainer;

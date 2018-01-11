@@ -14,6 +14,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -21,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import Filters.Condition;
 import de.micromata.opengis.kml.v_2_2_0.Document;
 import de.micromata.opengis.kml.v_2_2_0.Kml;
 import de.micromata.opengis.kml.v_2_2_0.Placemark;
@@ -31,32 +33,44 @@ import de.micromata.opengis.kml.v_2_2_0.Placemark;
  * this class contain all the method that create the wifilist network table and filter by some rules.
  *
  */
+/**
+ * @author yaron samuel
+ *
+ */
+/**
+ * @author yaron samuel
+ *
+ */
+/**
+ * @author yaron samuel
+ *
+ */
 public class wifiListContainer {
 
-	 private List<wifiList> container;
+	 public static final List<wifiList> container = new ArrayList<wifiList>();
 	 private Map<String,List<Double>> map;
 
 	 
-	/**
-	 *  Constructor empty wifiListContainer.
-	 */
-	public wifiListContainer() {
-		this.container = new ArrayList<wifiList>();
-	}
-	
-		/**
-	 * Copy constructor wifiListContainer.
-	 * @param item wifiListContainer we wand to copy
-	 */
-	public wifiListContainer(List<wifiList> item) {
-		this.container = item;
-	}
-	
+//	/**
+//	 *  Constructor empty wifiListContainer.
+//	 */
+//	public wifiListContainer() {
+//		this.container = new ArrayList<wifiList>();
+//	}
+//	
+//		/**
+//	 * Copy constructor wifiListContainer.
+//	 * @param item wifiListContainer we wand to copy
+//	 */
+//	public wifiListContainer(List<wifiList> item) {
+//		this.container = item;
+//	}
+//	
 	/**
 	 * Getting wifiListFile and enter him to wifilist container.
 	 * @param fileName
 	 */
-	public void getWifilistFile(String fileName) {
+	public static void getWifilistFile(String fileName) {
 
 		String line;
 		String[] table = new String[11];
@@ -96,7 +110,7 @@ public class wifiListContainer {
 
 					}
 				}
-				this.container.add(wifiline);
+				container.add(wifiline);
 				
 
 			}
@@ -111,16 +125,14 @@ public class wifiListContainer {
 		}
 
 	}
-	//TODO change to create
-	public void createWifilist(List<raw> rawlist) {
+/*	public void createWifilist(List<raw> rawlist) {
 //		List<wifiList> wifilist = new ArrayList<wifiList>();
 		for (int i = 0; i < rawlist.size(); i++) {
-			/*
-			 * constructor field: public wifiList(String id, String date, String time,
-			 * double lat, double lon, double alt, wifiPoint[] list) {
-			 * 
-			 */
-			//TODO 	wifiList r = new wifiList(record.get("id"),... date, time,
+			
+			 // constructor field: public wifiList(String id, String date, String time,
+			 // double lat, double lon, double alt, wifiPoint[] list) {
+			  
+			 
 
 			wifiList r = new wifiList(rawlist.get(i).getId(), rawlist.get(i).getDate(), rawlist.get(i).getTime(),
 					rawlist.get(i).getLat(), rawlist.get(i).getLon(), rawlist.get(i).getAlt());
@@ -142,11 +154,37 @@ public class wifiListContainer {
 			this.container.add(r);
 
 		}
+	}*/
+	
+	public static void buildContainer(ArrayList<wifiList> data) {
+
+
+		ArrayList<wifiList> sorted_data = new ArrayList<wifiList>();
+
+		for(int i = 0; i < data.size()-1; i++) {
+
+			if(data.get(i).compare(data.get(i+1)) == true) {
+				data.get(i+1).merge(data.get(i).getPoints());
+			}
+			else {		
+				sorted_data.add(data.get(i));
+			}			
+		}
+
+
+		container.addAll(sorted_data);
+		sorted_data.clear();
+		data.clear();
 	}
+	
+	public static int size() {
+		return container.size();
+	}
+	
 	/**
 	 * Creating a new wifiListFile
 	 */
-	public  void createWifiListFile(String fileName) {
+	public static  void createWifiListFile(String fileName) {
 		String[] title = { "Date", "Time", "ID", "Lat", "Lon", "Alt", "SSID1", "MAC1", "Frequncy1", "Signal1", "SSID2",
 				"MAC2", "Frequncy2", "Signal2", "SSID3", "MAC3", "Frequncy3", "Signal3", "SSID4", "MAC4", "Frequncy4",
 				"Signal4", "SSID5", "MAC5", "Frequncy5", "Signal5", "SSID6", "MAC6", "Frequncy6", "Signal6", "SSID7",
@@ -155,7 +193,7 @@ public class wifiListContainer {
 
 		Path outputFile = Paths.get(fileName);
 		
-		List<wifiList> wifilist = this.container;
+		List<wifiList> wifilist = container;
 		//TODO change the name later 
 		
 		try {
@@ -185,34 +223,39 @@ public class wifiListContainer {
 		}
 	}
 	
-	//TODO change the loction of all the filterd
-	/**
+	public static void delateAll() {
+		container.clear();
+	}
+	
+/*	*//**
 	 * Filter wifiList according to groupId 
 	 * @param users
-	 */
+	 *//*
 	public void filterByIdrgroup( List<String> users) {
 		Condition<wifiList> group = new findGroupId(users);
 		this.container = (ArrayList<wifiList>)  filter(this.container, group);
 	}
-	/**
+	*//**
 	 * Filter wifiList according to location
 	 * @param lat latitude
 	 * @param lon longitude
-	 */
+	 *//*
 	public void filterByLoc( double lat, double lon) {
 //		Condition<wifiList> condition = s -> s.lat == lat && s.lon == lon;
 		Condition<wifiList> condition = new findLoction(lat, lon);
 		System.out.println(condition);
 		this.container = (ArrayList<wifiList>) filter(this.container, condition);
 	}
-	/**
+	*//**
 	 * Filter wifiList according to date
 	 * @param date
-	 */
+	 *//*
 	public void filterByDate( String date) {
 		Condition<wifiList> condition = s -> s.getDate().equals(date);
 		this.container = (ArrayList<wifiList>) filter(this.container, condition);
-	}
+	}*/
+	
+	
 	/**
 	 * General filter (abstract filter)
 	 * @param items
@@ -250,7 +293,7 @@ public class wifiListContainer {
 	 * @return fix format of time
 	 * 
 	 */
-	public String timeFormatFix(String time) {
+	public static String timeFormatFix(String time) {
 		SimpleDateFormat ft = new SimpleDateFormat("hh:mm");
 		if (time.length() == 5) {
 //			System.out.print(time + " Parses as ");
@@ -276,7 +319,7 @@ public class wifiListContainer {
 	 * @return fix format of time stamp
 	 * 
 	 */
-	public String timeStampFormatFix(String date) {
+	public static String timeStampFormatFix(String date) {
 		SimpleDateFormat ft = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 			Date t = new Date();
 			try {
@@ -296,7 +339,7 @@ public class wifiListContainer {
 	 * https://github.com/micromata/javaapiforkml/blob/master/src/main/java/de/micromata/opengis/kml/v_2_2_0/TimeStamp.java
 	 * @param filename name of file name
 	 */
-	public void CreateKmlfile(String filename) {
+	public static void CreateKmlfile(String filename) {
 
 		try {
 			System.out.println("working..");
@@ -304,7 +347,7 @@ public class wifiListContainer {
 			final Kml kml = new Kml();
 			Document document = kml.createAndSetDocument().withName("Wifi Networks");
 
-			for (wifiList l : this.container) {
+			for (wifiList l : container) {
 
 				Double longitude = l.getLon();
 				Double latitude = l.getLat();
@@ -374,7 +417,7 @@ public class wifiListContainer {
     }	
     
 
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		wifiListContainer c  = new wifiListContainer();
 		
 //		String inputfileSName="testwifilist.csv";
@@ -401,7 +444,7 @@ public class wifiListContainer {
 		PointType p2  = new User(list);
 
 		c.locationOf(p2);
-		/*	
+			
 	 * 
 	 * 
 		PointType p  = new Mac("yaron");
@@ -425,8 +468,8 @@ public class wifiListContainer {
 		PointType p2  = new User(list);
 
 		c.locationOf(p2);
-*/
 
-	}
+
+	}*/
 
 }
