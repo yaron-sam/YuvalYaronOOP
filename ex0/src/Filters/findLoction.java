@@ -8,9 +8,8 @@ package Filters;
 import ex0.wifiList;
 
 public class findLoction implements Condition<wifiList> {
-	final double  r = 0.005;
 
-	double lat,lon;
+	double lat,lon,r;
 	
 	/**
 	 * Constructor findLocation by getting
@@ -21,8 +20,14 @@ public class findLoction implements Condition<wifiList> {
 		super();
 		this.lat = lat;
 		this.lon = lon;
+		 r = 0.005;
 	}
 
+	public findLoction(double lat, double lon,double r) {
+		this.lat = lat;
+		this.lon = lon;
+		 this.r = r;
+	}
 
 	
 	/**

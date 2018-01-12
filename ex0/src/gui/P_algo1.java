@@ -7,6 +7,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.text.ParseException;
+import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JEditorPane;
@@ -15,6 +16,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+import javax.swing.SwingConstants;
 
 
 @SuppressWarnings("serial")
@@ -61,6 +63,7 @@ public class P_algo1 extends JFrame {
 		contentPane.add(lblAlgorithm);
 
 		txtMac = new JTextField();
+		txtMac.setHorizontalAlignment(SwingConstants.CENTER);
 		txtMac.setFont(new Font("Segoe UI Semilight", Font.PLAIN, 18));
 		txtMac.addMouseListener(new MouseAdapter() {
 			@Override
@@ -79,15 +82,12 @@ public class P_algo1 extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				String mac = txtMac.getText();
-//				try {
-//					Position p = GUI_Wrapper.algo1Short(mac);
-//					textField.setText(""+p.lat);
-//					textField_1.setText(""+p.lon);
-//					textField_2.setText(""+p.alt);
-//				} catch (IOException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
+
+					List<Double> p = GUI_Wrapper.algo1Short(mac);
+					textField.setText(""+p.get(0));
+					textField_1.setText(""+p.get(1));
+					textField_2.setText(""+p.get(2));
+
 
 			}
 		});
@@ -132,12 +132,7 @@ public class P_algo1 extends JFrame {
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-//				try {
-//					GUI_Wrapper.exportAlgo1();
-//				} catch (IOException | ParseException e1) {
-//					// TODO Auto-generated catch block
-//					e1.printStackTrace();
-//				}
+					GUI_Wrapper.saveTOCSV("Algo1");
 			}
 		});
 		btnNewButton.setBounds(93, 272, 396, 32);

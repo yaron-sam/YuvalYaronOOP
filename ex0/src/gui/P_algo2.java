@@ -1,7 +1,6 @@
 package gui;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
+
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -317,12 +316,7 @@ public class P_algo2 extends JFrame {
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-//				try {
-//					GUI_Wrapper.exportAlgo2();
-//				} catch (IOException | ParseException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
+//TODO add what to do
 			}
 		});
 		btnNewButton.addActionListener(new ActionListener() {
@@ -337,12 +331,8 @@ public class P_algo2 extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent args0) {
 
-//				try {
-//					GUI_Wrapper.chooseCSVFile("nogpsfile");
-//				} catch (IOException | ParseException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
+				//TODO add what to do
+
 			}
 		});
 		btnNewButton_1.addActionListener(new ActionListener() {
@@ -360,12 +350,8 @@ public class P_algo2 extends JFrame {
 		btnAddCombFile.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent args0) {
-//				try {
-//					GUI_Wrapper.chooseCSVFile("combfile");
-//				} catch (IOException | ParseException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
+///TODO add what to do
+
 			}
 		});
 		btnAddCombFile.setBounds(263, 499, 181, 29);
@@ -394,36 +380,11 @@ public class P_algo2 extends JFrame {
 					Allm_Alls.add(s3);
 
 
-//					try {
-//						GUI_Wrapper.algo2Short(Allm_Alls);
-//						textField_2.setText(""+Database.final_algo2_data.get(0).alt);
-//						textField_5.setText(""+Database.final_algo2_data.get(0).lon);
-//						textField_1.setText(""+Database.final_algo2_data.get(0).lat);
-//						Database.final_algo2_data.clear();
-//						Mac_Hashmap.hash.clear();
-//					} catch (IOException | ParseException e1) {
-//						// TODO Auto-generated catch block
-//						e1.printStackTrace();
-//					}
-//
-//				}
-//				else if(jradio.isSelected()) {
-//
-//					String line = textField.getText();
-//					try {
-//						GUI_Wrapper.algo2Line(line);
-//						textField_2.setText(""+Database.final_algo2_data.get(0).alt);
-//						textField_5.setText(""+Database.final_algo2_data.get(0).lon);
-//						textField_1.setText(""+Database.final_algo2_data.get(0).lat);
-//						Database.final_algo2_data.clear();
-//						Mac_Hashmap.hash.clear();
-//					} catch (IOException | ParseException e1) {
-//						// TODO Auto-generated catch block
-//						e1.printStackTrace();
-//					}
-//
-//
+					//TODO add what to do
+
+
 				}
+
 			}
 		});
 

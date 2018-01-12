@@ -40,7 +40,6 @@ public class mainWindows {
 			public void run() {
 				try {
 					mainWindows window = new mainWindows();
-//					window.frmWifiApAnalysis.setUndecorated(true);
 					window.frmWifiApAnalysis.setVisible(true);
 				} catch (Exception e) {
 					
@@ -77,8 +76,7 @@ public class mainWindows {
 				try {
 					GUI_Wrapper.choosefolder();
 					directoryPath = FileSystems.getDefault().getPath(GUI_Wrapper.folder.getPath());
-//					Thread thread = new Thread(new Thread_Watcher());
-//					thread.start();
+//					TODO add Thread 
 				} catch (IOException | ParseException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -192,19 +190,19 @@ public class mainWindows {
 		frmWifiApAnalysis.getContentPane().add(textField);
 		textField.setColumns(10);
 		textField.setEditable(false);
-//		textField.setText("Size of data: " + Database.All_Data.size());
+		textField.setText("Size of data: " + wifiListContainer.container.size());
 
 		JButton btnSaveToKml = new JButton("Save To KML");
 		btnSaveToKml.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 
-//				try {
-//					GUI_Wrapper.saveTOKML("allData");
-//				} catch (IOException e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
+				try {
+					GUI_Wrapper.saveTOKML("allData");
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 
 			}
 		});
