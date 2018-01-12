@@ -1,12 +1,11 @@
-/Condition.class
 /Mac.class
 /PointType.class
 /User.class
 /example.class
-/findGroupId.class
-/findLoction.class
 /raw.class
+/rawFile.class
 /sortSignal.class
 /wifiList.class
 /wifiListContainer.class
 /wifiPoint.class
+/kml.class
