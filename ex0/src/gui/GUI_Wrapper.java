@@ -65,9 +65,15 @@ public class GUI_Wrapper {
 		chooser.setDialogTitle("Browse the folder to process");
 		chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
 		chooser.setAcceptAllFileFilterUsed(false);
+		
 
-			file = chooser.getSelectedFile();
-			wifiListContainer.getWifilistFile(file.getPath()); 
+		if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+		} else {
+			System.out.println("No Selection ");
+		}
+			
+		file = chooser.getSelectedFile();
+		wifiListContainer.getWifilistFile(file.toString()); 
 		
 
 	}

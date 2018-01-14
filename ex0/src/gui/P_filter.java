@@ -303,6 +303,11 @@ public class P_filter extends JFrame {
 		rdbtnOnoff.setBounds(18, 218, 261, 25);
 		contentPane.add(rdbtnOnoff);
 
+		
+		JButton btnNewButton_1 = new JButton("Save To KML File");
+		btnNewButton_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
 		if (rdbtnId.isSelected()) {
 
 			String id = textField.getText();
@@ -344,10 +349,10 @@ public class P_filter extends JFrame {
 
 		}
 		
-		JButton btnNewButton_1 = new JButton("Save To KML File");
-		btnNewButton_1.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
+//		JButton btnNewButton_1 = new JButton("Save To KML File");
+//		btnNewButton_1.addMouseListener(new MouseAdapter() {
+//			@Override
+//			public void mouseClicked(MouseEvent e) {
 				if(!rdbtnOnoff.isSelected()) {
 					if(idfilter != null && timefilter == null && posfilter == null)
 						GUI_Wrapper.Filters(idfilter);
