@@ -1,30 +1,20 @@
 /**
- * 
+ * junit test for find group ID
+ * @author yaron samuel
  */
-package Tset;
+package junit;
 
 import static org.junit.Assert.assertTrue;
+
 import java.util.ArrayList;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import wifiData.wifiList;
 import wifiData.wifiPoint;
 
-/**
- * @author Yuval_Gabso
- * 
- */
-class wifiListContainerTest {
-	
 
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@Before
-	void setUp() throws Exception {
-	}
+class findGroupIdTest {
 	@Test
 	public void testFindGroupId()
 	{
@@ -40,7 +30,6 @@ class wifiListContainerTest {
 		list.add(l2);
 		list.add(l3);
 		assertTrue("SSID Not match", list.get(2).getId().equals("anotherID"));
-		//TODO we need to complete the tester
 	}
 
 

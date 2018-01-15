@@ -1,17 +1,14 @@
 /**
  * 
  */
-package Tset;
+package junit;
 
 import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 
-import org.junit.Assert;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 import wifiData.wifiList;
 import wifiData.wifiListContainer;
@@ -23,14 +20,8 @@ import wifiData.wifiPoint;
  */
 class wifiListContainerTests extends wifiListContainer {
 	ArrayList<wifiList> list;
-	@BeforeEach
 	
-	/**
-	 * @throws java.lang.Exception
-	 */
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
+
 
 	/**
 	 * @throws java.lang.Exception

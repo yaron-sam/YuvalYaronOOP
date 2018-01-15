@@ -5,11 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 
 public class rawFile {
@@ -31,7 +27,6 @@ public class rawFile {
 	 * @param file wigle file (scv format).
 	 */
 	public static void read(File file) {
-		int rssi;
 
 		ArrayList<wifiList> wigle_mes = new ArrayList<wifiList>();
 		try {

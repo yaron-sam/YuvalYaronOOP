@@ -1,7 +1,6 @@
 package wifiData;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -9,15 +8,8 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -25,9 +17,6 @@ import java.util.TreeMap;
 import Filters.Condition;
 import algo.Mac;
 import algo.PointType;
-import de.micromata.opengis.kml.v_2_2_0.Document;
-import de.micromata.opengis.kml.v_2_2_0.Kml;
-import de.micromata.opengis.kml.v_2_2_0.Placemark;
 
 /**
  * 
@@ -268,11 +257,10 @@ public class wifiListContainer {
 		List<wifiList> copy = new ArrayList<wifiList>(container); //This does a shallow copy
 
 
-		for (wifiList sample : container) {
-			System.out.println(sample.getPoints().size());
-//			System.out.println(sample.points.size());
-		}
-//		System.out.println("*********************");
+//		for (wifiList sample : container) {
+//			System.out.println(sample.getPoints().size());
+//		}
+		
 		for (wifiList sample : copy) {
 //			System.out.println(sample.getPoints().size());
 			for (wifiPoint p : sample.getPoints()) {

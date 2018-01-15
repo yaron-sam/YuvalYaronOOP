@@ -1,19 +1,12 @@
 package gui;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
-import java.text.ParseException;
-
 import javax.swing.ButtonGroup;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JEditorPane;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -21,15 +14,10 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
-import javax.swing.border.EmptyBorder;
-
 import Filters.And;
 import Filters.Condition;
 import Filters.Not;
 import Filters.Or;
-import Filters.Time;
-import Filters.findGroupId;
-import Filters.findLoction;
 import wifiData.wifiList;
 
 import javax.swing.JCheckBox;
@@ -372,25 +360,25 @@ public class P_filter extends JFrame {
 					if(ANDButton.isSelected() || ORButton.isSelected()) {
 						if(idfilter != null && timefilter != null && posfilter == null) {
 							if(ANDButton.isSelected()) {
-								GUI_Wrapper.Filters(new And(idfilter, timefilter));
+								GUI_Wrapper.Filters(new And<wifiList>(idfilter, timefilter));
 							}else {
-								GUI_Wrapper.Filters(new Or(idfilter, timefilter));
+								GUI_Wrapper.Filters(new Or<wifiList>(idfilter, timefilter));
 							}
 						}
 						
 						if(idfilter != null && timefilter == null && posfilter != null) {
 							if(ANDButton.isSelected()) {
-								GUI_Wrapper.Filters(new And(idfilter, posfilter));
+								GUI_Wrapper.Filters(new And<wifiList>(idfilter, posfilter));
 							}else {
-								GUI_Wrapper.Filters(new Or(idfilter, posfilter));
+								GUI_Wrapper.Filters(new Or<wifiList>(idfilter, posfilter));
 							}
 						}
 						
 						if(idfilter == null && timefilter != null && posfilter != null) {
 							if(ANDButton.isSelected()) {
-								GUI_Wrapper.Filters(new And(posfilter, timefilter));
+								GUI_Wrapper.Filters(new And<wifiList>(posfilter, timefilter));
 							}else {
-								GUI_Wrapper.Filters(new Or(posfilter, timefilter));
+								GUI_Wrapper.Filters(new Or<wifiList>(posfilter, timefilter));
 							}
 						}
 
@@ -399,11 +387,11 @@ public class P_filter extends JFrame {
 
 					else if(NOTbutton.isSelected()) {
 						if(idfilter != null && timefilter == null && posfilter == null)
-							GUI_Wrapper.Filters(new Not(idfilter));
+							GUI_Wrapper.Filters(new Not<wifiList>(idfilter));
 						else if(idfilter == null && timefilter != null && posfilter == null)
-							GUI_Wrapper.Filters(new Not(timefilter));
+							GUI_Wrapper.Filters(new Not<wifiList>(timefilter));
 						else if(idfilter != null && timefilter == null && posfilter != null)
-							GUI_Wrapper.Filters(new Not(posfilter));
+							GUI_Wrapper.Filters(new Not<wifiList>(posfilter));
 					}
 				}
 				try {

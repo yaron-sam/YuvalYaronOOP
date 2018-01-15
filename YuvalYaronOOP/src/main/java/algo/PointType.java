@@ -1,6 +1,5 @@
 package algo;
 
-import java.util.Collection;
 import java.util.List;
 
 import wifiData.wifiList;

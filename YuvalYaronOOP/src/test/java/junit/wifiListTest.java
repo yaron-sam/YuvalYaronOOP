@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Tset;
+package junit;
 
 import static org.junit.Assert.*;
 
