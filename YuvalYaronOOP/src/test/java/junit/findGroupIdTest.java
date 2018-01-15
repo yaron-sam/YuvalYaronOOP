@@ -4,17 +4,22 @@
  */
 package junit;
 
+
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.Assert.*;
+
 
 import wifiData.wifiList;
 import wifiData.wifiPoint;
 
 
 class findGroupIdTest {
+	
 	@Test
 	public void testFindGroupId()
 	{
@@ -29,8 +34,8 @@ class findGroupIdTest {
 		list.add(l);
 		list.add(l2);
 		list.add(l3);
-		assertTrue("SSID Not match", list.get(2).getId().equals("anotherID"));
+		assertTrue("SSID Not match", list.get(1).getId().equals("anotherID"));
 	}
-
-
+	
+	
 }
