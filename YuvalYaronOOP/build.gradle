@@ -8,19 +8,27 @@ repositories {
 
 dependencies {
 	// https://mvnrepository.com/artifact/de.micromata.jak/JavaAPIforKml
-	compile group: 'de.micromata.jak', name: 'JavaAPIforKml', version: '2.2.0'
+	compile group: 'de.micromata.jak', name: 'JavaAPIforKml', version: '2.2.0'}
+
+dependencies {	
 	// https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
-	testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.1.0-M1'
-	testCompile 'junit:junit:4.+'
-	
-	
-}
+	testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.1.0-M1'}
+
+dependencies {	testCompile 'junit:junit:4.+'}	
+
+dependencies {  implementation 'org.xerial:sqlite-jdbc:+'   }
+
+dependencies {  implementation 'mysql:mysql-connector-java:5.+'   }
 
 task runApps(type: JavaExec) {
     main = "gui.mainWindows"
     classpath = sourceSets.main.runtimeClasspath
 }
 
+task SQLread(type: JavaExec) {
+    main = "dataBase.mySQL"
+    classpath = sourceSets.main.runtimeClasspath
+}
 
 task success {  
   doLast {println "All Juint tests passed!"} 
