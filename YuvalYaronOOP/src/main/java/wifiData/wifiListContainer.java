@@ -22,41 +22,14 @@ import algo.PointType;
  * 
  * wifiListContainer class
  * this class contain all the method that create the wifilist network table and filter by some rules.
- *
- */
-/**
  * @author yaron samuel
- *
  */
-/**
- * @author yaron samuel
- *
- */
-/**
- * @author yaron samuel
- *
- */
+
 public class wifiListContainer {
 
 	 public static final List<wifiList> container = new ArrayList<wifiList>();
-	 private static Map<String,List<Double>> map;
 
-	 
-//	/**
-//	 *  Constructor empty wifiListContainer.
-//	 */
-//	public wifiListContainer() {
-//		this.container = new ArrayList<wifiList>();
-//	}
-//	
-//		/**
-//	 * Copy constructor wifiListContainer.
-//	 * @param item wifiListContainer we wand to copy
-//	 */
-//	public wifiListContainer(List<wifiList> item) {
-//		this.container = item;
-//	}
-//	
+	
 	/**
 	 * Getting wifiListFile and enter him to wifilist container.
 	 * @param fileName
@@ -247,49 +220,8 @@ public class wifiListContainer {
 		return loc;
 		}
 	
-
-//filter(wifiListContainer L,findLocation(lat,lon));
-
-
 	
-	public static void generateMaclocFile(String file_name) {
-		map=new TreeMap<String,List<Double>>();
-		List<wifiList> copy = new ArrayList<wifiList>(container); //This does a shallow copy
 
-
-//		for (wifiList sample : container) {
-//			System.out.println(sample.getPoints().size());
-//		}
-		
-		for (wifiList sample : copy) {
-//			System.out.println(sample.getPoints().size());
-			for (wifiPoint p : sample.getPoints()) {
-//				System.out.println(p.getMAC());
-				if (!map.containsKey(p.getMAC()))
-					map.put(p.getMAC(), locationOf(new Mac(p.getMAC())));
-			}
-		}
-		System.out.println("number of diffrent mac: " + map.size());
-		try {
-			PrintWriter pw = new PrintWriter(file_name);
-			StringBuilder sb = new StringBuilder();
-			sb.append("Mac adrees,Lat,Lon,Alt\n");
-			map.forEach((mac,a) ->{
-				sb.append(mac+","+a.get(0)+","+a.get(1)+","+a.get(2)+"\n");
-				}
-			);
-			pw.print(sb);
-			pw.close();
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-		}
-		System.out.println("create mac loction file: "+file_name);
-	}
-
-    public static void generateUserlocFile (String file_name) {
-   	 
-    }	
     
 
 /*	public static void main(String[] args) {

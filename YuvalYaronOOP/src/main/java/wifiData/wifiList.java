@@ -206,6 +206,13 @@ public class wifiList {
 			this.wifiPointAdd(points.get(i));
 		}		
 	}
+
+	public void setLoction(List<Double> location) {
+		lat  = location.get(0);
+		lon  = location.get(1);
+		alt  = location.get(2);
+
+	}
 	
 
 //	public static void main(String[] args) {

@@ -15,6 +15,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.SwingConstants;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 @SuppressWarnings("serial")
@@ -23,9 +25,9 @@ public class P_algo1 extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txtMac;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField txtLat;
+	private JTextField textLon;
+	private JTextField textAlt;
 
 	/**
 	 * Launch the application.
@@ -81,10 +83,10 @@ public class P_algo1 extends JFrame {
 			public void mouseClicked(MouseEvent arg0) {
 				String mac = txtMac.getText();
 
-					List<Double> p = GUI_Wrapper.algo1Short(mac);
-					textField.setText(""+p.get(0));
-					textField_1.setText(""+p.get(1));
-					textField_2.setText(""+p.get(2));
+					List<Double> p = GUI_Wrapper.algo1Mac(mac);
+					txtLat.setText(""+p.get(0));
+					textLon.setText(""+p.get(1));
+					textAlt.setText(""+p.get(2));
 
 
 			}
@@ -105,32 +107,35 @@ public class P_algo1 extends JFrame {
 		lblLat.setBounds(420, 161, 69, 20);
 		contentPane.add(lblLat);
 
-		textField = new JTextField();
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		textField.setEditable(false);
-		textField.setBounds(34, 189, 167, 46);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtLat = new JTextField();
+		txtLat.setHorizontalAlignment(SwingConstants.CENTER);
+		txtLat.setEditable(false);
+		txtLat.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		txtLat.setBounds(34, 189, 167, 46);
+		contentPane.add(txtLat);
+		txtLat.setColumns(10);
 
-		textField_1 = new JTextField();
-		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		textField_1.setEditable(false);
-		textField_1.setColumns(10);
-		textField_1.setBounds(216, 189, 160, 46);
-		contentPane.add(textField_1);
+		textLon = new JTextField();
+		textLon.setHorizontalAlignment(SwingConstants.CENTER);
+		textLon.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		textLon.setEditable(false);
+		textLon.setColumns(10);
+		textLon.setBounds(216, 189, 160, 46);
+		contentPane.add(textLon);
 
-		textField_2 = new JTextField();
-		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 17));
-		textField_2.setEditable(false);
-		textField_2.setColumns(10);
-		textField_2.setBounds(391, 189, 160, 46);
-		contentPane.add(textField_2);
+		textAlt = new JTextField();
+		textAlt.setHorizontalAlignment(SwingConstants.CENTER);
+		textAlt.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		textAlt.setEditable(false);
+		textAlt.setColumns(10);
+		textAlt.setBounds(391, 189, 160, 46);
+		contentPane.add(textAlt);
 
 		JButton btnNewButton = new JButton("Export Algorithm 1 (All Data) to CSV File");
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-					GUI_Wrapper.saveTOCSV("Algo1");
+					GUI_Wrapper.saveTOCSV(GUI_Wrapper.CSVType.Algo1);
 			}
 		});
 		btnNewButton.setBounds(93, 272, 396, 32);

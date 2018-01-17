@@ -395,9 +395,8 @@ public class P_filter extends JFrame {
 					}
 				}
 				try {
-					GUI_Wrapper.saveTOKML("filter");
+					GUI_Wrapper.saveTOKML(GUI_Wrapper.KMLType.Filter);
 				} catch (IOException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			}

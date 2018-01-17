@@ -10,9 +10,9 @@ public class wifiPoint {
 
 	/**
 	 * Contractor of wifiPoint 
-	 * @param SsSID
-	 * @param SAC
-	 * @param Signal
+	 * @param SSID
+	 * @param MAC
+	 * @param Signal (rssi)
 	 * @param Channel
 	 */
 	public wifiPoint(String SSID, String MAC, int Signal, int Channel) {

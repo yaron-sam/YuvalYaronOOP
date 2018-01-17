@@ -3,11 +3,10 @@ package gui;
 
 import java.awt.EventQueue;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
@@ -18,6 +17,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
+
 
 
 @SuppressWarnings("serial")
@@ -31,14 +31,12 @@ public class P_algo2 extends JFrame {
 	private JTextField txtSignal;
 	private JTextField txtSignal_1;
 	private JTextField txtSignal_2;
-	private JTextField textField_5;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField textLon;
+	private JTextField textLat;
+	private JTextField textAlt;
 	private JLabel lblMac;
 	private JLabel lblSignal;
-	private JButton btnNewButton;
 	private JButton btnNewButton_1;
-	private JButton btnAddCombFile;
 	private JButton btnSubmit;
 
 	/**
@@ -62,7 +60,7 @@ public class P_algo2 extends JFrame {
 	 */
 	public P_algo2() {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 548, 685);
+		setBounds(100, 100, 531, 516);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -75,7 +73,7 @@ public class P_algo2 extends JFrame {
 		contentPane.add(lblAlgorithm);
 
 		textField = new JTextField();
-		textField.setBounds(15, 107, 499, 26);
+		textField.setBounds(15, 107, 476, 26);
 		contentPane.add(textField);
 		textField.setColumns(10);
 
@@ -96,11 +94,11 @@ public class P_algo2 extends JFrame {
 		txtMac.setColumns(10);
 		txtMac.setEnabled(false);
 		txtMac.setEditable(false);
-		JRadioButton jradio2 = new JRadioButton("Three Mac and Signal Input");
-		jradio2.addMouseListener(new MouseAdapter() {
+		JRadioButton jradio3val = new JRadioButton("Three Mac and Signal Input");
+		jradio3val.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(jradio2.isSelected())
+				if(jradio3val.isSelected())
 				{
 
 					textField.setEnabled(false);
@@ -132,19 +130,19 @@ public class P_algo2 extends JFrame {
 				}
 			}
 		});
-		jradio2.setBounds(15, 145, 252, 29);
-		contentPane.add(jradio2);
+		jradio3val.setBounds(15, 145, 252, 29);
+		contentPane.add(jradio3val);
 
-		jradio2.setActionCommand("enable");
-		jradio2.setEnabled(true);
+		jradio3val.setActionCommand("enable");
+		jradio3val.setEnabled(true);
 
 
-		JRadioButton jradio = new JRadioButton("String Line From \"nogps\" File Input");
-		jradio.setSelected(true);
-		jradio.addMouseListener(new MouseAdapter() {
+		JRadioButton jradioString = new JRadioButton("String Line From \"nogps\" File Input");
+		jradioString.setSelected(true);
+		jradioString.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(jradio.isSelected())
+				if(jradioString.isSelected())
 				{
 
 					textField.setEnabled(true);
@@ -175,15 +173,15 @@ public class P_algo2 extends JFrame {
 
 			}
 		});
-		jradio.setBounds(15, 66, 293, 29);
-		contentPane.add(jradio);
+		jradioString.setBounds(15, 66, 293, 29);
+		contentPane.add(jradioString);
 
-		jradio.setActionCommand("enable");
-		jradio.setEnabled(true);
+		jradioString.setActionCommand("enable");
+		jradioString.setEnabled(true);
 
 		ButtonGroup bt=new ButtonGroup();
-		bt.add(jradio);
-		bt.add(jradio2);
+		bt.add(jradioString);
+		bt.add(jradio3val);
 
 
 
@@ -232,7 +230,7 @@ public class P_algo2 extends JFrame {
 		});
 		txtSignal.setText("Signal 1");
 		txtSignal.setColumns(10);
-		txtSignal.setBounds(267, 200, 146, 26);
+		txtSignal.setBounds(216, 200, 146, 26);
 		contentPane.add(txtSignal);
 		txtSignal.setEnabled(false);
 		txtSignal.setVisible(true);
@@ -248,7 +246,7 @@ public class P_algo2 extends JFrame {
 		});
 		txtSignal_1.setText("Signal 2");
 		txtSignal_1.setColumns(10);
-		txtSignal_1.setBounds(267, 242, 146, 26);
+		txtSignal_1.setBounds(216, 242, 146, 26);
 		contentPane.add(txtSignal_1);
 		txtSignal_1.setEnabled(false);
 		txtSignal_1.setVisible(true);
@@ -265,127 +263,98 @@ public class P_algo2 extends JFrame {
 		});
 		txtSignal_2.setText("Signal 3");
 		txtSignal_2.setColumns(10);
-		txtSignal_2.setBounds(267, 284, 146, 26);
+		txtSignal_2.setBounds(216, 284, 146, 26);
 		contentPane.add(txtSignal_2);
 		txtSignal_2.setEnabled(false);
 		txtSignal_2.setVisible(true);
 		txtSignal_2.setEditable(false);
 
-		textField_5 = new JTextField();
-		textField_5.setEditable(false);
-		textField_5.setColumns(10);
-		textField_5.setBounds(191, 369, 134, 26);
-		contentPane.add(textField_5);
+		textLon = new JTextField();
+		textLon.setEditable(false);
+		textLon.setColumns(10);
+		textLon.setBounds(191, 372, 134, 26);
+		contentPane.add(textLon);
 
 		JLabel lblLat = new JLabel("Lat");
-		lblLat.setBounds(66, 342, 69, 20);
+		lblLat.setBounds(66, 345, 69, 20);
 		contentPane.add(lblLat);
 
 		JLabel lblLon = new JLabel("Lon");
-		lblLon.setBounds(240, 342, 69, 20);
+		lblLon.setBounds(240, 345, 69, 20);
 		contentPane.add(lblLon);
 
 		JLabel lblAlt = new JLabel("Alt");
-		lblAlt.setBounds(409, 342, 69, 20);
+		lblAlt.setBounds(409, 345, 69, 20);
 		contentPane.add(lblAlt);
 
-		textField_1 = new JTextField();
-		textField_1.setEditable(false);
-		textField_1.setColumns(10);
-		textField_1.setBounds(15, 369, 134, 26);
-		contentPane.add(textField_1);
+		textLat = new JTextField();
+		textLat.setEditable(false);
+		textLat.setColumns(10);
+		textLat.setBounds(15, 372, 134, 26);
+		contentPane.add(textLat);
 
-		textField_2 = new JTextField();
-		textField_2.setEditable(false);
-		textField_2.setColumns(10);
-		textField_2.setBounds(359, 369, 134, 26);
-		contentPane.add(textField_2);
+		textAlt = new JTextField();
+		textAlt.setEditable(false);
+		textAlt.setColumns(10);
+		textAlt.setBounds(359, 372, 134, 26);
+		contentPane.add(textAlt);
 
 		lblMac = new JLabel("MAC");
 		lblMac.setBounds(77, 174, 69, 20);
 		contentPane.add(lblMac);
 
 		lblSignal = new JLabel("Signal");
-		lblSignal.setBounds(311, 174, 69, 20);
+		lblSignal.setBounds(260, 174, 69, 20);
 		contentPane.add(lblSignal);
 
-		btnNewButton = new JButton("Export result to CSV File");
-		btnNewButton.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent arg0) {
-//TODO add what to do
-			}
-		});
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
-		btnNewButton.setBounds(48, 544, 411, 29);
-		contentPane.add(btnNewButton);
-
-		btnNewButton_1 = new JButton("Add nogps File");
+		btnNewButton_1 = new JButton("Add estimated Loction to no-GPS file");
 		btnNewButton_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent args0) {
-
-				//TODO add what to do
-
-			}
-		});
-		btnNewButton_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-
+					GUI_Wrapper.chooseNoGPSFile();
+					GUI_Wrapper.saveTOCSV(GUI_Wrapper.CSVType.Algo2);
 
 			}
 		});
 
 
-		btnNewButton_1.setBounds(78, 499, 170, 29);
+
+		btnNewButton_1.setBounds(134, 437, 247, 29);
 		contentPane.add(btnNewButton_1);
-
-		btnAddCombFile = new JButton("Add comb File");
-		btnAddCombFile.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent args0) {
-///TODO add what to do
-
-			}
-		});
-		btnAddCombFile.setBounds(263, 499, 181, 29);
-		contentPane.add(btnAddCombFile);
 
 		btnSubmit = new JButton("Submit");
 		btnSubmit.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(jradio2.isSelected()) {
-					String m1 = txtMac.getText();
-					String m2 = txtMac_1.getText();
-					String m3 = txtMac_2.getText();
-					String s1 = txtSignal.getText();
-					String s2 = txtSignal_1.getText();
-					String s3 = txtSignal_2.getText();
+				List<String> input = new ArrayList<String>();
 
-
-					ArrayList<String> Allm_Alls = new ArrayList<String>();
-
-					Allm_Alls.add(m1);
-					Allm_Alls.add(s1);
-					Allm_Alls.add(m2);
-					Allm_Alls.add(s2);
-					Allm_Alls.add(m3);
-					Allm_Alls.add(s3);
-
-
-					//TODO add what to do
-
-
+				
+				if(jradio3val.isSelected()) {
+					input.add(txtMac.getText());
+					input.add(txtMac_1.getText());
+					input.add(txtMac_2.getText());
+					input.add(txtSignal.getText());
+					input.add(txtSignal_1.getText());
+					input.add(txtSignal_2.getText());
 				}
+				else if(jradioString.isSelected()) {
+					String[] line = textField.getText().split(",");
+					for (int i = 6; i < line.length; i += 4) {
+						input.add(line[i+1]);
+						input.add(line[i+2]);						
+					}
+				}
+
+					List<Double> output = GUI_Wrapper.algo2user(input);
+					textAlt.setText(output.get(0).toString());
+					textLon.setText(output.get(0).toString());
+					textLat.setText(output.get(0).toString());
+				
 
 			}
 		});
 
-		btnSubmit.setBounds(164, 437, 197, 29);
+		btnSubmit.setBounds(392, 212, 99, 86);
 		contentPane.add(btnSubmit);
 
 	}
