@@ -13,16 +13,21 @@ import wifiData.wifiPoint;
 public class mySQL {
 	  private static String ip;
 	  private static String url; 
+	  private static String port;
 	  private static String user; 
 	  private static String password;
+	  private static String dbname;
+	  private static String table;
 	  private static Connection _con = null;
 
 	
-	public mySQL(String ip, String url, String user, String password) {
+	public mySQL(String ip, String port, String user, String password,String dbname,String table) {
 		this.ip = ip;
-		this.url = url;
+		url = "jdbc:mysql://"+ip+":"+ port+"/"+dbname +"?useSSL=false";
 		this.user = user;
 		this.password = password;
+		this.dbname = dbname;
+		this.table = table;		
 	}
 	
 	public mySQL() {
@@ -30,6 +35,8 @@ public class mySQL {
 		  url = "jdbc:mysql://"+ip+":3306/oop_course_ariel?useSSL=false";
 		  user = "oop1";
 		  password = "Lambda1();";
+		  dbname = "oop_course_ariel";
+		  table = "ex4_db";		
 	}
 	
 
@@ -63,27 +70,24 @@ public class mySQL {
 		try {
             _con = getConnection();
             st = _con.createStatement();
-            rs = st.executeQuery("SELECT UPDATE_TIME FROM information_schema.tables WHERE TABLE_SCHEMA = 'oop_course_ariel' AND TABLE_NAME = 'ex4_db'");
+            rs = st.executeQuery("SELECT UPDATE_TIME FROM information_schema.tables WHERE TABLE_SCHEMA = '"+ dbname+"' AND TABLE_NAME = '"+table+"'");
             if (rs.next()) {
 //                System.out.println("**** Update: "+rs.getString(1));
             }
 
-            PreparedStatement pst = _con.prepareStatement("SELECT * FROM ex4_db");
+            PreparedStatement pst = _con.prepareStatement("SELECT * FROM "+table);
             rs = pst.executeQuery();
             
             while (rs.next()) {
-                int num_ofAP = rs.getInt(7);
-                int len = 7+2*num_ofAP;
                 String[] time = rs.getString(2).split(" ");
                 
                 wifiList wifiline = new wifiList(rs.getString(3), time[0], time[1], Double.parseDouble(rs.getString(4)),
 						Double.parseDouble(rs.getString(5)), Double.parseDouble(rs.getString(6)));
                 
-                int numOfWifis = Integer.parseInt(rs.getString(7));
+                int numOfWifis = rs.getInt(7);
                 
 				for (int i =8 ; i<2*numOfWifis+8;i=i+2) {
-						wifiline.wifiPointAdd(new wifiPoint(rs.getString(i+1),
-													rs.getString(i),0 ,0));
+						wifiline.wifiPointAdd(new wifiPoint("",rs.getString(i),Integer.parseInt(rs.getString(i+1)) ,0));
 
 				}
 				wifiListContainer.container.add(wifiline);
@@ -107,9 +111,11 @@ public class mySQL {
 	
 	 public static void main(String[] args) {
 		try {
+			System.out.println("working***");
 			mySQL s = new mySQL();
 			s.read();
 			wifiListContainer.createWifiListFile("testSql.csv");
+			System.out.println("done!");
 		} catch (Throwable e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
