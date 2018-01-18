@@ -16,8 +16,8 @@ public class mySQL {
 	  private static String port;
 	  private static String user; 
 	  private static String password;
-	  private static String dbname;
-	  private static String table;
+	  static String dbname;
+	  static String table;
 	  private static Connection _con = null;
 
 	
@@ -43,7 +43,7 @@ public class mySQL {
 	/**
 	 * Connect to a remote MySQL database
 	 */
-	private static  Connection getConnection() throws SQLException {
+	public static  Connection getConnection() throws SQLException {
 		return DriverManager.getConnection(
 			/* database= */ url, 
 			/* username= */ user,
@@ -60,7 +60,7 @@ public class mySQL {
  * https://github.com/benmoshe/OOP_Exe/edit/master/src/db/MySQL_101.java
  * @throws Throwable
  */
-	public void read() throws Throwable {
+	public static void read() throws Throwable {
 		
 		
 		Statement st = null;
@@ -70,10 +70,6 @@ public class mySQL {
 		try {
             _con = getConnection();
             st = _con.createStatement();
-            rs = st.executeQuery("SELECT UPDATE_TIME FROM information_schema.tables WHERE TABLE_SCHEMA = '"+ dbname+"' AND TABLE_NAME = '"+table+"'");
-            if (rs.next()) {
-//                System.out.println("**** Update: "+rs.getString(1));
-            }
 
             PreparedStatement pst = _con.prepareStatement("SELECT * FROM "+table);
             rs = pst.executeQuery();

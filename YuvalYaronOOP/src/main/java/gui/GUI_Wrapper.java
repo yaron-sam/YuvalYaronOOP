@@ -18,6 +18,7 @@ import Filters.findLoction;
 import algo.Mac;
 import algo.User;
 import algo.fileGenerate;
+import dataBase.SQLwhatcher;
 import dataBase.mySQL;
 import wifiData.kml;
 import wifiData.rawFile;
@@ -226,6 +227,9 @@ public class GUI_Wrapper {
 			mySQL s = new mySQL(ip,port,user,password,dbName,tableName);
 			try {
 				s.read();
+				
+				Thread thread = new Thread(new SQLwhatcher());
+				thread.start();
 			} catch (Throwable e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
