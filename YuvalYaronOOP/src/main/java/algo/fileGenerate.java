@@ -71,7 +71,7 @@ public class fileGenerate {
     		
     		list.setLoction(wifiListContainer.locationOf(userdata));
 		
-    		createWifiListFile(file_name);
+    		createFile(file_name);
 		}
    	 
     }
@@ -130,7 +130,7 @@ public class fileGenerate {
 	/**
 	 * Creating a new wifiListFile
 	 */
-	private static void createWifiListFile(String fileName) {
+	private static void createFile(String fileName) {
 		String[] title = { "Date", "Time", "ID", "Lat", "Lon", "Alt", "SSID1", "MAC1", "Frequncy1", "Signal1", "SSID2",
 				"MAC2", "Frequncy2", "Signal2", "SSID3", "MAC3", "Frequncy3", "Signal3", "SSID4", "MAC4", "Frequncy4",
 				"Signal4", "SSID5", "MAC5", "Frequncy5", "Signal5", "SSID6", "MAC6", "Frequncy6", "Signal6", "SSID7",
