@@ -90,7 +90,6 @@ public class mainWindows {
 				} catch (IOException | ParseException e) {
 					e.printStackTrace();
 				}
-				// Browse button to select directory
 				textField.setText("size of data: " + wifiListContainer.size());
 
 			
