@@ -2,8 +2,11 @@ package gui;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -15,6 +18,7 @@ import Filters.Condition;
 import Filters.Time;
 import Filters.findGroupId;
 import Filters.findLoction;
+import Filters.util;
 import algo.Mac;
 import algo.User;
 import algo.fileGenerate;
@@ -176,8 +180,8 @@ public class GUI_Wrapper {
 	public static List<Double> algo2user(List<String> input)  {
 		Map<String,Integer> map =new TreeMap<String,Integer>();
 
-		for (int i = 0; i < input.size(); i++) {
-			map.put(input.get(i), Integer.parseInt(input.get(i)));
+		for (int i = 0; i < input.size(); i+=2) {
+			map.put(input.get(i), Integer.parseInt(input.get(i+1)));
 		}
 		return wifiListContainer.locationOf(new User(map));
 	}
@@ -237,10 +241,53 @@ public class GUI_Wrapper {
 			
 		}
 
+
 		
 	}
 	
+	public static void exportCondition(Condition<wifiList> c) {
 
+		JFileChooser fileChooser = new JFileChooser();
+		FileNameExtensionFilter filter = new FileNameExtensionFilter("bin File", "bin","BIN");
+		fileChooser.setFileFilter(filter);
+		fileChooser.setCurrentDirectory(new java.io.File("."));
+		fileChooser.setAcceptAllFileFilterUsed(false);
+		if (fileChooser.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
+			Path path = fileChooser.getSelectedFile().toPath();
+			path =  path.resolveSibling(fileChooser.getSelectedFile().toString()+ ".bin");
+			try {
+				util.exportC(c,path);
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		
+		}
+	}
+
+	public static Condition<wifiList> importCondition() {
+		
+		JFileChooser fileChooser = new JFileChooser();
+		FileNameExtensionFilter filter = new FileNameExtensionFilter("bin File", "bin","BIN");
+		fileChooser.setFileFilter(filter);
+		fileChooser.setCurrentDirectory(new java.io.File("."));
+		fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+		fileChooser.setAcceptAllFileFilterUsed(false);
+		fileChooser.setDialogTitle("Browse the folder to process");
+
+		if (fileChooser.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
+			try {
+				return util.importC(fileChooser.getSelectedFile().toPath());
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+		
+		}
+		return null;
+	}
 	
+
 	
 }

@@ -5,9 +5,12 @@
 
 package Filters;
 
+import java.io.Serializable;
+
 import wifiData.wifiList;
 
-public class findLoction implements Condition<wifiList> {
+public class findLoction implements Condition<wifiList> , Serializable {
+	private static final long serialVersionUID = 1L;
 
 	double lat,lon,r;
 	
@@ -36,7 +39,7 @@ public class findLoction implements Condition<wifiList> {
 	 */
 	@Override
 	public String toString() {
-		return "findLoction [lat=" + lat + ", lon=" + lon + "]";
+		return "Loction [lat=" + lat + ", lon=" + lon + "]";
 	}
 
 

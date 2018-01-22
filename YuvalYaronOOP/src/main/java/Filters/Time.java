@@ -1,8 +1,15 @@
 package Filters;
 
-import wifiData.wifiList;
+import java.io.Serializable;
 
-public class Time implements Condition<wifiList>{
+import wifiData.wifiList;
+/**
+ * Time condition. crate condntion beatwean start to end time sample.
+ * @author yaron samuel
+ *
+ */
+public class Time implements Condition<wifiList>, Serializable{
+	private static final long serialVersionUID = 1L;
 	private String start, end;
 public Time(String start, String end) {
 			this.start = start;
@@ -23,7 +30,7 @@ public Time(String start, String end) {
 	}
 
 	public String toString() {
-		return ""+this.getClass().getName()+" ["+this.start+","+end+"]";
+		return ""+this.getClass().getName()+" ["+start+","+end+"]";
 	}
 
 

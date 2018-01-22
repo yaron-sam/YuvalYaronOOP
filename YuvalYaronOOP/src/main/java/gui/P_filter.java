@@ -18,9 +18,13 @@ import Filters.And;
 import Filters.Condition;
 import Filters.Not;
 import Filters.Or;
+import Filters.util;
 import wifiData.wifiList;
 
 import javax.swing.JCheckBox;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextPane;
 
 
 
@@ -34,9 +38,11 @@ public class P_filter extends JFrame {
 	private JTextField textField_5;
 	private JTextField txtBeginingTime;
 	private JTextField txtEndedTime;
-	private Condition<wifiList> idfilter;
-	private Condition<wifiList> timefilter;
-	private Condition<wifiList> posfilter;
+	private Condition<wifiList> idfilter=null;
+	private Condition<wifiList> timefilter=null;
+	private Condition<wifiList> posfilter=null;
+	private Condition<wifiList> finalFilter=null;
+
 
 	/**
 	 * Launch the application.
@@ -59,7 +65,7 @@ public class P_filter extends JFrame {
 	 */
 	public P_filter() {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 768, 375);
+		setBounds(100, 100, 861, 375);
 		contentPane = new JPanel();
 		contentPane.setBorder(null);
 		setContentPane(contentPane);
@@ -122,6 +128,7 @@ public class P_filter extends JFrame {
 					txtBeginingTime.setEditable(true);
 					txtEndedTime.setEnabled(true);
 					txtEndedTime.setEditable(true);
+						
 				}
 
 				else if(!TimeRadioButton.isSelected()) {
@@ -133,7 +140,7 @@ public class P_filter extends JFrame {
 
 			}
 		});
-		TimeRadioButton.setBounds(293, 54, 155, 29);
+		TimeRadioButton.setBounds(256, 54, 155, 29);
 		contentPane.add(TimeRadioButton);
 
 		
@@ -142,6 +149,7 @@ public class P_filter extends JFrame {
 		rdbtnId.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+
 
 				if(rdbtnId.isSelected()) {
 
@@ -189,7 +197,7 @@ public class P_filter extends JFrame {
 					textField_5.setVisible(true);
 					textField_5.setEditable(true);
 					textField_5.setText("Radius");
-
+					
 				}
 
 				else if(!rdbtnPosition.isSelected()) {
@@ -213,7 +221,7 @@ public class P_filter extends JFrame {
 
 			}
 		});
-		rdbtnPosition.setBounds(586, 54, 155, 29);
+		rdbtnPosition.setBounds(452, 54, 103, 29);
 		contentPane.add(rdbtnPosition);
 
 
@@ -227,7 +235,7 @@ public class P_filter extends JFrame {
 			}
 		});
 		textField_3.setColumns(10);
-		textField_3.setBounds(566, 120, 166, 26);
+		textField_3.setBounds(432, 120, 166, 26);
 		contentPane.add(textField_3);
 		textField_3.setText("Lat");
 
@@ -242,7 +250,7 @@ public class P_filter extends JFrame {
 			}
 		});
 		textField_4.setColumns(10);
-		textField_4.setBounds(566, 186, 166, 26);
+		textField_4.setBounds(432, 186, 166, 26);
 		contentPane.add(textField_4);
 		textField_4.setText("Lon");
 
@@ -257,7 +265,7 @@ public class P_filter extends JFrame {
 			}
 		});
 		textField_5.setColumns(10);
-		textField_5.setBounds(566, 250, 166, 26);
+		textField_5.setBounds(432, 250, 166, 26);
 		contentPane.add(textField_5);
 		textField_5.setText("Radius");
 
@@ -292,108 +300,16 @@ public class P_filter extends JFrame {
 		contentPane.add(rdbtnOnoff);
 
 		
-		JButton btnNewButton_1 = new JButton("Save To KML File");
-		btnNewButton_1.addMouseListener(new MouseAdapter() {
+		JButton btnSave = new JButton("Save To KML File");
+		btnSave.setEnabled(false);
+
+		btnSave.setToolTipText("save to kml file");
+		btnSave.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-		if (rdbtnId.isSelected()) {
 
-			String id = textField.getText();
+				GUI_Wrapper.Filters(finalFilter);
 
-			if (id.equalsIgnoreCase("Name Of Device") || id.equalsIgnoreCase("")) {
-				JOptionPane.showMessageDialog(null, "Invalid ID Input", "Message",
-						JOptionPane.INFORMATION_MESSAGE);
-
-			} else {
-
-				idfilter = GUI_Wrapper.idFilter(id);
-			}
-		}
-		
-		if(TimeRadioButton.isSelected()){
-			String start = txtBeginingTime.getText();
-			String end = txtEndedTime.getText();
-			timefilter =  GUI_Wrapper.timeFilter(start, end);
-					
-			}
-		
-
-
-		if (rdbtnPosition.isSelected()) {
-			String lat = textField_3.getText();
-			String lon = textField_4.getText();
-			String radius = textField_5.getText();
-
-			if (lat.equalsIgnoreCase("Lat") || lat.equalsIgnoreCase("") || lon.equalsIgnoreCase("Lon")
-					|| lon.equalsIgnoreCase("") || radius.equalsIgnoreCase("Radius") || radius.equalsIgnoreCase("")) {
-
-				JOptionPane.showMessageDialog(null, "Invalid Position Input", "Message",
-						JOptionPane.INFORMATION_MESSAGE);
-
-			} else {
-				posfilter = GUI_Wrapper.positionFilter(Double.parseDouble(lat), Double.parseDouble(lon),
-						Double.parseDouble(radius));
-			}
-
-		}
-		
-//		JButton btnNewButton_1 = new JButton("Save To KML File");
-//		btnNewButton_1.addMouseListener(new MouseAdapter() {
-//			@Override
-//			public void mouseClicked(MouseEvent e) {
-				if(!rdbtnOnoff.isSelected()) {
-					if(idfilter != null && timefilter == null && posfilter == null)
-						GUI_Wrapper.Filters(idfilter);
-					else if(idfilter == null && timefilter != null && posfilter == null)
-						GUI_Wrapper.Filters(timefilter);
-					else if(idfilter != null && timefilter == null && posfilter != null)
-						GUI_Wrapper.Filters(posfilter);
-					else
-						try {
-							throw new IOException("erorr - only one can pick");
-						} catch (IOException e1) {
-							e1.printStackTrace();
-						}  
-				}
-
-				if(rdbtnOnoff.isSelected()) {
-					if(ANDButton.isSelected() || ORButton.isSelected()) {
-						if(idfilter != null && timefilter != null && posfilter == null) {
-							if(ANDButton.isSelected()) {
-								GUI_Wrapper.Filters(new And<wifiList>(idfilter, timefilter));
-							}else {
-								GUI_Wrapper.Filters(new Or<wifiList>(idfilter, timefilter));
-							}
-						}
-						
-						if(idfilter != null && timefilter == null && posfilter != null) {
-							if(ANDButton.isSelected()) {
-								GUI_Wrapper.Filters(new And<wifiList>(idfilter, posfilter));
-							}else {
-								GUI_Wrapper.Filters(new Or<wifiList>(idfilter, posfilter));
-							}
-						}
-						
-						if(idfilter == null && timefilter != null && posfilter != null) {
-							if(ANDButton.isSelected()) {
-								GUI_Wrapper.Filters(new And<wifiList>(posfilter, timefilter));
-							}else {
-								GUI_Wrapper.Filters(new Or<wifiList>(posfilter, timefilter));
-							}
-						}
-
-					}
-
-
-					else if(NOTbutton.isSelected()) {
-						if(idfilter != null && timefilter == null && posfilter == null)
-							GUI_Wrapper.Filters(new Not<wifiList>(idfilter));
-						else if(idfilter == null && timefilter != null && posfilter == null)
-							GUI_Wrapper.Filters(new Not<wifiList>(timefilter));
-						else if(idfilter != null && timefilter == null && posfilter != null)
-							GUI_Wrapper.Filters(new Not<wifiList>(posfilter));
-					}
-				}
 				try {
 					GUI_Wrapper.saveTOKML(GUI_Wrapper.KMLType.Filter);
 				} catch (IOException e1) {
@@ -401,24 +317,24 @@ public class P_filter extends JFrame {
 				}
 			}
 		});
-		btnNewButton_1.setBounds(310, 282, 176, 25);
-		contentPane.add(btnNewButton_1);
+		btnSave.setBounds(671, 16, 138, 58);
+		contentPane.add(btnSave);
 
 		JLabel lblNewLabel = new JLabel("Begin");
 		lblNewLabel.setFont(new Font("Segoe UI Semilight", Font.BOLD | Font.ITALIC, 18));
-		lblNewLabel.setBounds(234, 99, 97, 20);
+		lblNewLabel.setBounds(197, 99, 97, 20);
 		contentPane.add(lblNewLabel);
 
 		JLabel lblEnd = new JLabel("End");
 		lblEnd.setFont(new Font("Segoe UI Semilight", Font.BOLD | Font.ITALIC, 18));
-		lblEnd.setBounds(234, 139, 97, 20);
+		lblEnd.setBounds(197, 139, 97, 20);
 		contentPane.add(lblEnd);
 		
 		txtBeginingTime = new JTextField();
 		txtBeginingTime.setEditable(false);
 		txtBeginingTime.setEnabled(false);
 		txtBeginingTime.setText("begining time");
-		txtBeginingTime.setBounds(310, 103, 138, 20);
+		txtBeginingTime.setBounds(273, 103, 138, 20);
 		contentPane.add(txtBeginingTime);
 		txtBeginingTime.setColumns(10);
 		
@@ -427,8 +343,144 @@ public class P_filter extends JFrame {
 		txtEndedTime.setEnabled(false);
 		txtEndedTime.setText("ended time");
 		txtEndedTime.setColumns(10);
-		txtEndedTime.setBounds(310, 143, 138, 20);
+		txtEndedTime.setBounds(273, 143, 138, 20);
 		contentPane.add(txtEndedTime);
+		
+		JTextPane txtpnDisply = new JTextPane();
+		txtpnDisply.setText("filter...");
+		txtpnDisply.setBounds(44, 305, 357, 20);
+		contentPane.add(txtpnDisply);
+		
+		JButton btnupload = new JButton("Upload filter");
+		btnupload.addActionListener(new ActionListener()  {
+			public void actionPerformed(ActionEvent arg0) {
+				if (rdbtnId.isSelected()) {
+
+					String id = textField.getText();
+
+					if (id.equalsIgnoreCase("Name Of Device") || id.equalsIgnoreCase("")) {
+						JOptionPane.showMessageDialog(null, "Invalid ID Input", "Message",
+								JOptionPane.INFORMATION_MESSAGE);
+
+					} else {
+
+						idfilter = GUI_Wrapper.idFilter(id);
+					}
+				}
+
+				if (TimeRadioButton.isSelected()) {
+					String start = txtBeginingTime.getText();
+					String end = txtEndedTime.getText();
+					timefilter = GUI_Wrapper.timeFilter(start, end);
+
+				}
+
+				if (rdbtnPosition.isSelected()) {
+					String lat = textField_3.getText();
+					String lon = textField_4.getText();
+					String radius = textField_5.getText();
+
+					if (lat.equalsIgnoreCase("Lat") || lat.equalsIgnoreCase("") || lon.equalsIgnoreCase("Lon")
+							|| lon.equalsIgnoreCase("") || radius.equalsIgnoreCase("Radius")
+							|| radius.equalsIgnoreCase("")) {
+
+						JOptionPane.showMessageDialog(null, "Invalid Position Input", "Message",
+								JOptionPane.INFORMATION_MESSAGE);
+
+					} else {
+						posfilter = GUI_Wrapper.positionFilter(Double.parseDouble(lat), Double.parseDouble(lon),
+								Double.parseDouble(radius));
+					}
+
+				}
+				
+				
+				if (!rdbtnOnoff.isSelected()) {
+					if (idfilter != null && timefilter == null && posfilter == null)
+						finalFilter = idfilter;
+					else if (idfilter == null && timefilter != null && posfilter == null)
+						finalFilter = timefilter;
+					else if (idfilter == null && timefilter == null && posfilter != null)
+						finalFilter = posfilter;
+					else
+						try {
+							throw new IOException("erorr - only one can pick");
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						
+
+				}
+
+				if (rdbtnOnoff.isSelected()) {
+					if (ANDButton.isSelected() || ORButton.isSelected()) {
+						if (idfilter != null && timefilter != null && posfilter == null) {
+							if (ANDButton.isSelected()) {
+								finalFilter = (new And<wifiList>(idfilter, timefilter));
+							} else {
+								finalFilter = (new Or<wifiList>(idfilter, timefilter));
+							}
+						}
+
+						if (idfilter != null && timefilter == null && posfilter != null) {
+							if (ANDButton.isSelected()) {
+								finalFilter = (new And<wifiList>(idfilter, posfilter));
+							} else {
+								finalFilter = (new Or<wifiList>(idfilter, posfilter));
+							}
+						}
+
+						if (idfilter == null && timefilter != null && posfilter != null) {
+							if (ANDButton.isSelected()) {
+								finalFilter = (new And<wifiList>(posfilter, timefilter));
+							} else {
+								finalFilter = (new Or<wifiList>(posfilter, timefilter));
+							}
+						}
+
+					}
+
+					else if (NOTbutton.isSelected()) {
+						if (idfilter != null && timefilter == null && posfilter == null)
+							finalFilter = (new Not<wifiList>(idfilter));
+						else if (idfilter == null && timefilter != null && posfilter == null)
+							finalFilter = (new Not<wifiList>(timefilter));
+						else if (idfilter != null && timefilter == null && posfilter != null)
+							finalFilter = (new Not<wifiList>(posfilter));
+					}
+				}
+				
+				idfilter = timefilter = posfilter = null;
+				txtpnDisply.setText(finalFilter.toString());
+				btnSave.setEnabled(true);
+
+
+			}
+		});
+		btnupload.setBounds(671, 84, 138, 58);
+		contentPane.add(btnupload);
+		
+		JButton btnImportFilter = new JButton("Import filter");
+		btnImportFilter.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				finalFilter = GUI_Wrapper.importCondition();
+				txtpnDisply.setText(finalFilter.toString());
+				btnSave.setEnabled(true);
+
+			}
+		});
+		btnImportFilter.setBounds(671, 153, 138, 58);
+		contentPane.add(btnImportFilter);
+		
+		JButton btnExportFilter = new JButton("Export filter");
+		btnExportFilter.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				GUI_Wrapper.exportCondition(finalFilter);
+			}
+		});
+		btnExportFilter.setBounds(671, 223, 138, 58);
+		contentPane.add(btnExportFilter);
 		
 
 

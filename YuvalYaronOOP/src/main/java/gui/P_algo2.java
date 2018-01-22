@@ -331,10 +331,10 @@ public class P_algo2 extends JFrame {
 				
 				if(jradio3val.isSelected()) {
 					input.add(txtMac.getText());
-					input.add(txtMac_1.getText());
-					input.add(txtMac_2.getText());
 					input.add(txtSignal.getText());
+					input.add(txtMac_1.getText());
 					input.add(txtSignal_1.getText());
+					input.add(txtMac_2.getText());
 					input.add(txtSignal_2.getText());
 				}
 				else if(jradioString.isSelected()) {

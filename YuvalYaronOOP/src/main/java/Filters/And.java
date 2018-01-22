@@ -1,8 +1,12 @@
 package Filters;
 
+import java.io.Serializable;
+
 import wifiData.wifiList;
 
-public class And<T> implements Condition<wifiList>{
+public class And<T> implements Condition<wifiList>, Serializable{
+	private static final long serialVersionUID = 1L;
+
 	private  Condition<T> c1, c2;
 
 	public And(Condition<T> c1, Condition<T> c2) {
@@ -15,7 +19,7 @@ public class And<T> implements Condition<wifiList>{
 		return c1.test(rec) && c2.test(rec);
 	}
 	public String toString() {
-		return "("+c1+" and "+c2+")";
+		return "("+c1+" AND "+c2+")";
 	}
 
 

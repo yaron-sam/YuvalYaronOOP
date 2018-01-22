@@ -8,6 +8,8 @@ import wifiData.wifiList;
  *
  */
 public class Not<T> implements Condition<wifiList>{
+	private static final long serialVersionUID = 1L;
+
 	private Condition<T> filter;
 
 	public Not(Condition<T> f) {
@@ -18,6 +20,6 @@ public class Not<T> implements Condition<wifiList>{
 	}
 
 	public String toString() {
-		return "not("+filter+")";
+		return "NOT("+filter+")";
 	}
 }

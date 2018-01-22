@@ -1,6 +1,7 @@
 package Filters;
 
 
+import java.io.Serializable;
 import java.util.Collection;
 
 import wifiData.wifiList;
@@ -10,7 +11,8 @@ import wifiData.wifiList;
  * findGroupId is implements Condition, creates new wifiList with the necessary data by filtering according to GroupId condition
  *
  */
-public class findGroupId implements Condition<wifiList> {
+public class findGroupId implements Condition<wifiList>, Serializable {
+	private static final long serialVersionUID = 1L;
 
 	private Collection<String> list;
 
@@ -25,7 +27,7 @@ public class findGroupId implements Condition<wifiList> {
 	 */
 	@Override
 	public String toString() {
-		return "find Group Users [list=" + list + "]";
+		return "Group Users [list=" + list + "]";
 	}
 
 
