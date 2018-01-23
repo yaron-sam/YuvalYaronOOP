@@ -293,16 +293,10 @@ public class mainWindows {
 		apps.getContentPane().add(txtPassword);
 		
 		JButton btnImprtFromTable = new JButton("import from table");
+		btnImprtFromTable.setToolTipText("if empty, the data come from oop_course_ariel.ex4_db table.");
 		btnImprtFromTable.setFont(new Font("Tahoma", Font.PLAIN, 12));
-
 		btnImprtFromTable.setBounds(400, 278, 136, 27);
 		apps.getContentPane().add(btnImprtFromTable);
-		
-		JTextPane txtNote = new JTextPane();
-		txtNote.setBackground(SystemColor.control);
-		txtNote.setText("in default, the data import from oop_course_ariel.ex4_db");
-		txtNote.setBounds(367, 316, 169, 39);
-		apps.getContentPane().add(txtNote);
 		
 		btnImprtFromTable.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
