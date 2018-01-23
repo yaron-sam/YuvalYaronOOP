@@ -5,6 +5,7 @@ package wifiData;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -82,6 +83,8 @@ public class wifiList {
 	 */
 	public void wifiPointAdd(wifiPoint p) {
 		getPoints().add(p);
+//	    Collections.sort(getPoints());
+//		getPoints().sort( (o1,o2) ->o1.compareTo(o2));
 		getPoints().sort( new sortSignal());
 		while (getPoints().size() > 10) {
 			getPoints().remove(10);
@@ -162,16 +165,10 @@ public class wifiList {
 		
 	}
 
-	/**
-	 * @param points the points to set
-	 */
-	public void setPoints(ArrayList<wifiPoint> points) {
-		this.points = points;
-	}
 
 	
 	/**
-	 * check if position and time are equals. (used for marge same  id time loction list) 
+	 * check if position and time are equals. (used for marge same id time loction list) 
 	 * @param other wifiList 
 	 * @return
 	 */
@@ -200,7 +197,10 @@ public class wifiList {
 			return false;
 		return true;
 	}
-
+/**
+ * marge points list of two {@code wifiList}
+ * @param points list of {@link wifiPoint}
+ */
 	public void merge(List<wifiPoint> points) {
 		for (int i = 0; i < points.size(); i++){	
 			this.wifiPointAdd(points.get(i));

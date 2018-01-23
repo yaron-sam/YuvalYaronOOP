@@ -1,7 +1,11 @@
 package wifiData;
 
-
-public class wifiPoint {
+/**
+ * contain one AP sample data.  
+ * @author yaron samuel
+ *
+ */
+public class wifiPoint implements Comparable<wifiPoint>{
 	private String SSID;
 	private  String MAC;
 	private  int Signal;
@@ -96,6 +100,22 @@ public class wifiPoint {
 			return false;
 		return true;
 	}
+
+	@Override
+	public int compareTo(wifiPoint o) {
+		// TODO Auto-generated method stub
+
+		if (o == null) 
+			return -1;
+		
+
+		return o.getSignal() - this.getSignal();
+	}
+
+
+
+
+
 	
 	
 }

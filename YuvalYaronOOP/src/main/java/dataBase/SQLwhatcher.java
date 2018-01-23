@@ -7,6 +7,8 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import wifiData.wifiListContainer;
+
 public class SQLwhatcher implements Runnable {
 
 	private static Connection _con = null;
@@ -38,7 +40,9 @@ public class SQLwhatcher implements Runnable {
 
 					if (currect.compareToIgnoreCase(first) > 0) {
 						try {
+							wifiListContainer.delateAll();
 							mySQL.read();
+							first = currect;
 							
 						} catch (Throwable e) {
 							e.printStackTrace();
