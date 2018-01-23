@@ -14,4 +14,11 @@ to run the project:
 4. to run the apps via gradle, enter Task: **runApps**
 
 ## Collaboration Diagram
- ![diagram](https://github.com/SamYaron/YuvalYaronOOP/blob/master/YuvalYaronOOP/docs/Collaboration_Diagram.JPG)
+ ![diagram](https://github.com/SamYaron/YuvalYaronOOP/blob/master/docs/Collaboration_Diagram.JPG)
+
+## how-to and explaintion
+you can find explaintion in folder **docs**. in the folder exist example output files and uml diagrams.
+
+in folder **data** you can find input data that we used for test the project.
+
+note that if you push the **import from table** buttom, in default the data come from **oop_course_ariel.ex4_db** table.
