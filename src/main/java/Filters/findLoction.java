@@ -39,7 +39,7 @@ public class findLoction implements Condition<wifiList> , Serializable {
 	 */
 	@Override
 	public String toString() {
-		return "Loction [lat=" + lat + ", lon=" + lon + "]";
+		return "Loction [lat=" + lat + ", lon=" + lon + ", radios="+r+ "]";
 	}
 
 
